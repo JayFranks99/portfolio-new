@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#coding-btn").click(function(){
+    $(".coding").show(500);
+    $(".design").hide(500);
+    $(".digital").hide(500);
+  });
+  $("#design-btn").click(function(){
+    $(".coding").hide(500);
+    $(".design").show(500);
+    $(".digital").hide(500);
+  });
+  $("#digital-btn").click(function(){
+    $(".coding").hide(500);
+    $(".design").hide(500);
+    $(".digital").show(500);
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="coding-btn">Coding</button>
+<button id="design-btn">Design</button>
+<button id="digital-btn">Digital</button>
+
+<p class="coding">CODING CONTENT</p>
+<p class="design">DESIGN CONTENT</p>
+<p class="digital">DIGITAL CONTENT</p>
+
+
+<style>
+
+.design, .digital {
+  display: none;
+}
+
+</style>
+
+
+</body>
+</html>
