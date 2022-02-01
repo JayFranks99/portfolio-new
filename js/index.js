@@ -2,13 +2,13 @@
 
 $(document).ready(function() {
 $("#close-nav-btn").click(function(){
-$(".overlay").slideUp(500);
+$(".overlay").slideUp(400);
 });
 });
 
 $(document).ready(function() {
   $("#hamburger").click(function(){
-  $(".overlay").slideDown(500);
+  $(".overlay").slideDown(400);
   $('.overlay').css('display', 'flex');
   $('.overlay').css('align-items', 'center');
 });
@@ -28,7 +28,7 @@ $(document).ready(function(){
     $("#design-btn").addClass("j-btn3");
     $("#digital-btn").addClass("j-btn3");
 
-    $(".coding").fadeIn(500, "swing");
+    $(".coding").fadeIn(1000, "swing");
     $(".design").hide();
     $(".digital").hide();
     $('.portfolio').slick('setPosition');
@@ -39,7 +39,7 @@ $(document).ready(function(){
     $("#design-btn").removeClass("j-btn3");
     $("#digital-btn").addClass("j-btn3");
 
-    $(".design").fadeIn(500, "swing");
+    $(".design").fadeIn(1000, "swing");
     $(".coding").hide();
     $(".digital").hide();
     $('.portfolio').slick('setPosition');
@@ -50,7 +50,7 @@ $(document).ready(function(){
     $("#design-btn").addClass("j-btn3");
     $("#digital-btn").removeClass("j-btn3");
 
-    $(".digital").fadeIn(500, "swing");
+    $(".digital").fadeIn(1000, "swing");
     $(".coding").hide();
     $(".design").hide();
     $('.portfolio').slick('setPosition');
