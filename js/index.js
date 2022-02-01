@@ -2,13 +2,13 @@
 
 $(document).ready(function() {
 $("#close-nav-btn").click(function(){
-$(".overlay").slideUp(300);
+$(".overlay").slideUp(500);
 });
 });
 
 $(document).ready(function() {
   $("#hamburger").click(function(){
-  $(".overlay").slideDown(300);
+  $(".overlay").slideDown(500);
   $('.overlay').css('display', 'flex');
   $('.overlay').css('align-items', 'center');
 });
