@@ -1,0 +1,394 @@
+/* Style defaults */
+p {
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', sans-serif;
+  color: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  color: var(--primary);
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #2F2F2F;
+  --grey: #595959;
+  --light_grey: #828282;
+  --white: #fff;
+  --blue: #008ECC;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  /* important for vertical alignment to work*/
+  width: 100%;
+  /* To ensure font sizes display properly */
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+
+button:hover {
+  cursor: pointer
+}
+
+.j-btn {
+  font-family: 'Archivo Black', sans-serif;
+  background: var(--primary);
+  border: solid 3px var(--primary);
+  color: var(--white);
+  border-radius: 1.5em;
+  cursor: pointer;
+  transition: .2s;
+  transition: all 200ms ease-in-out;
+  padding: 9px 27px;
+  font-size: 0.8rem;
+  -webkit-transition: all 200ms ease-in-out;
+  text-transform: capitalize;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+.j-btn2 {
+  background: none;
+  border: solid 3px var(--primary);
+  color: var(--primary);
+}
+
+.j-btn3 {
+  background: none;
+  border: solid 3px transparent;
+  color: var(--light_grey);
+  box-shadow: none;
+}
+
+.j-btn3:hover {
+  color: var(--primary);
+}
+
+/* Container set up */
+.j-container {
+  max-width: 1300px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style defualts mobile */
+@media (max-width: 600px) {
+  p {
+    font-size: 0.9rem;
+  }
+
+  .j-container {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .j-btn {
+    padding: 9px 20px;
+    font-size: 0.7rem;
+  }
+
+  .j-btn3 {
+    text-decoration: underline;
+  }
+}
+
+/* Style defualts iphone 5/se */
+@media (max-width: 321px) {
+
+  /* Making everything full width, one column due to small screen size */
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/*---------- LAPTOP---------- */
+
+/* HERO SECTION */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #FCFCFC; */
+  position: relative;
+  padding: 100px 0 175px;
+}
+
+.hero-div {
+  width: 85%;
+  max-width: 1300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 50px;
+}
+
+.hero-text {
+  width: 70%;
+  z-index: 1;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: var(--grey);
+  margin: 7.5px 0 20px;
+  width: 57.5%;
+}
+
+.hero-text h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  color: var(--light_black);
+  margin-top: 7.5px;
+}
+
+/* Hide 'Web' Developer */
+.hero-text span {
+  display: none;
+}
+
+.hero-text h2 {
+  font-size: 1.4rem;
+  font-family: 'Archivo', sans-serif;
+  color: var(--light_grey)
+}
+
+.hero-image {
+  width: 55%;
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 650px;
+}
+
+.coding-lang img {
+  margin: 0 25px 0 0;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  cursor: pointer;
+}
+
+/* About Me Section */
+.img-text-section {
+  padding: 5% 0;
+}
+
+.img-left {
+  width: 37.5%;
+}
+
+.img-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-right {
+  width: 55%;
+  text-align: left;
+}
+
+.text-right div:last-of-type {
+  margin: 15px 0 20px;
+}
+
+.text-right p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+.text-right i {
+  margin-right: 5px;
+}
+
+.section-heading p {
+  color: var(--light_grey);
+  font-size: 1.25rem;
+  margin-bottom: 1px;
+}
+
+.section-heading h2 {
+  font-size: 2.25rem;
+  margin: 0 0 10px;
+}
+
+/* SKILLS SECTION */
+
+#section4 .slick-dots {
+  bottom: -40px;
+}
+
+/* Large screens */
+@media (min-width: 1500px) {
+  .hero-div {
+    padding: 50px 0 50px;
+  }
+
+  .hero-image {
+    width: 47.5%;
+    right: 7.5%;
+    top: -100px;
+  }
+
+  /* Show Front-end Web Developer */
+  .hero-text span {
+    display: inline;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3.25rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .hero-div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-container {
+    padding: 50px 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    position: unset;
+  }
+
+  .hero-text {
+    order: 2;
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .section-heading {
+    text-align: center;
+  }
+
+  .hero-container {
+    padding: 0 0 50px;
+  }
+
+  .hero-image img {
+    height: 320px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--light_black);
+    margin-top: 7.5px;
+    line-height: 1.2;
+  }
+
+  /* Show Front-end Web Developer */
+  .hero-text span {
+    display: inline;
+  }
+
+  .hero-text h2 {
+    font-size: 1.25rem;
+    font-family: 'Archivo', sans-serif;
+    color: var(--light_grey)
+  }
+
+  .hero-text p {
+    margin: 10px auto 25px;
+    font-size: 1rem;
+  }
+
+  .down-arrow {
+    left: 45%;
+    bottom: 0;
+  }
+
+  .coding-lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .coding-lang img {
+    margin: unset;
+  }
+
+  /* ABOUT ME SECTION */
+
+  .img-text-section {
+    padding: 15% 0;
+  }
+
+  .img-left {
+    width: 70%;
+  }
+
+  .text-right {
+    width: 95%;
+  }
+
+  .img-text-section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  /* SKILLS SECTION */
+
+  #section4 .slick-dots {
+    bottom: -50px;
+  }
+}

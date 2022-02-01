@@ -1,0 +1,257 @@
+/* Bootstrap class */
+.navbar-fixed-top {
+    position: absolute;
+}
+
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1300px;
+  margin: 10px auto 0;
+}
+
+#desktop-nav span {
+  font-size: 40px;
+  cursor:pointer;
+  color: var(--primary);
+  z-index: 2;
+}
+
+.logo {
+  margin: 20px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-flex {
+  display: flex !important;
+  align-items: center;
+}
+
+.main-div {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay-content a {
+  transition: 0.3s;
+}
+
+.overlay-content a:hover {
+  transition: 0.3s;
+  transform: translate(0px, -3px);
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: var(--blue);
+}
+
+.overlay .closebtn, .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: var(--blue);
+  color: var(--white);
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-family: unset;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 4px 12px rgb(0 0 0);
+  -webkit-box-shadow:  0px 4px 12px rgb(0 0 0);
+}
+
+#hamburger {
+  z-index: 999;
+  background: #29ADE7;
+  color: var(--white);
+  width: 55px;
+  height: 55px;
+  box-shadow: 0px 2px 9px 2px rgb(207 207 207);
+  -webkit-box-shadow:  0px 2px 9px 2px rgb(207 207 207);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: all 500ms;
+}
+
+#hamburger:hover {
+  background: var(--blue);
+}
+
+#hamburger span {
+  height: 3px;
+  margin: 3px 0;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 30px;
+  position: relative;
+  left: 12.5px;
+}
+
+#hamburger span:nth-child(2) {
+  width: 17.5px;
+}
+
+#hamburger span:nth-child(3) {
+  width: 25px;
+}
+
+a.closebtn:hover, .close-btn:hover {
+  color: var(--white) !important;
+  opacity: 0.8;
+}
+
+.tyi-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tyi-info p {
+  color: var(--white);
+}
+
+.tyi-info img {
+  margin: 10px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.tyi-info p {
+  margin: 2px 0;
+  font-size: 1rem;
+}
+
+.tyi-info p:first-of-type {
+  font-family: 'Archivo Black';
+  font-size: 1.25rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin: 5px auto 0;
+}
+
+.contact-info img:hover {
+  cursor: pointer;
+}
+
+.div-seperator {
+  margin: 20px 0;
+}
+
+.jay-hr {
+  height: 2px;
+  background: rgb(255 255 255);
+  width: 30px;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
+@media(max-width: 600px) {
+  #desktop-nav {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* Hamburger hidden by defualt, JS code used to display:block if scrolled past portfolio section, display none if not */
+  /* #desktop-nav span {
+    position: fixed;
+    top: 20px;
+    transition: all 0.75s;
+    right: -15%;
+  } */
+
+  #hamburger {
+    opacity: 0;
+    position: fixed;
+    top: 20px;
+    transition: all 0.75s;
+    right: -15%;
+  }
+
+
+  .nav-active {
+    right: 20px !important;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/* Iphone 5 / SE */
+@media (max-width: 321px) {
+  .overlay a {
+    font-size: 1.5rem;
+  }
+
+  .overlay .closebtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tyi-info img {
+    width: 55px;
+    height: 55px;
+  }
+}

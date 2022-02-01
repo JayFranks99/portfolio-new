@@ -1,0 +1,49 @@
+body {
+  position: relative;
+}
+
+/* #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;} */
+/* #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;} */
+/* #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;} */
+/* #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;} */
+#section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+#scrolldots {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  z-index: 999;
+  width: 1.5rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#scrolldots li {
+  width: 0.8rem;
+  height: 0.8rem;
+  /* width: 0.5625rem;
+  height: 0.5625rem; */
+  border-radius: 50%;
+  background-color: #aeb4c2;
+  opacity: .5;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: all .2s ease-in-out;
+  margin: 7.5px 0;
+}
+
+#scrolldots li.active {
+  width: 0.8rem;
+  height: 0.8rem;
+  /* width: 0.6875rem;
+  height: 0.6875rem; */
+  background-color: #2F2F2F;
+  margin-left: -1px;
+  opacity: 1;
+}
+
+#scrolldots>li>a:focus, #scrolldots>li>a:hover {
+  background-color: unset;
+}

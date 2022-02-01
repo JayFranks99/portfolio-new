@@ -1,0 +1,30 @@
+.main {
+  width: 85%;
+  max-width: 1300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots {
+  bottom: 0px;
+}
+
+@media (min-width:1400px) {
+  .slick-dots {
+    bottom: -20px;
+  }
+}
+
+@media (max-width:600px) {
+  .main {
+    width: 100%;
+  }
+
+  .slick-dots {
+    bottom: -20px;
+  }
+}
