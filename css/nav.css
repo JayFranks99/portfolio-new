@@ -198,19 +198,11 @@ a.closebtn:hover, .close-btn:hover {
   opacity: 0.7;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   #desktop-nav {
     width: 90%;
     margin: 0;
   }
-
-  /* Hamburger hidden by defualt, JS code used to display:block if scrolled past portfolio section, display none if not */
-  /* #desktop-nav span {
-    position: fixed;
-    top: 20px;
-    transition: all 0.75s;
-    right: -15%;
-  } */
 
   #hamburger {
     opacity: 0;
@@ -219,7 +211,6 @@ a.closebtn:hover, .close-btn:hover {
     transition: all 0.75s;
     right: -15%;
   }
-
 
   .nav-active {
     right: 20px !important;
@@ -232,17 +223,9 @@ a.closebtn:hover, .close-btn:hover {
   .contact-info {
     width: 90%;
   }
-}
 
-@media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 20px
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 2rem;
   }
 }
 
@@ -256,10 +239,11 @@ a.closebtn:hover, .close-btn:hover {
   .overlay .closebtn {
     width: 40px;
     height: 40px;
+    font-size: 25px;
   }
 
   .tyi-info img {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 }
