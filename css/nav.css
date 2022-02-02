@@ -174,8 +174,16 @@ a.closebtn:hover, .close-btn:hover {
   margin: 5px auto 0;
 }
 
+.contact-info img {
+  box-shadow: 0px 5px 7px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 5px 7px rgb(0 0 0 / 10%);
+  border-radius: 50%;
+  transition: opacity .2s;
+}
+
 .contact-info img:hover {
   cursor: pointer;
+  opacity: .8;
 }
 
 .div-seperator {
