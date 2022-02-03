@@ -122,7 +122,6 @@ button:hover {
 }
 
 /*---------- LAPTOP---------- */
-
 /* HERO SECTION */
 .hero-container {
   display: flex;
@@ -241,7 +240,6 @@ button:hover {
 }
 
 /* SKILLS SECTION */
-
 #section4 .slick-dots {
   bottom: -40px;
 }
@@ -278,10 +276,6 @@ button:hover {
 
 /* Tablet */
 @media (max-width: 1100px) {
-  .flex-container {
-    flex-direction: column;
-  }
-
   .hero-div {
     flex-direction: column;
     width: 100%;
@@ -309,9 +303,24 @@ button:hover {
   }
 }
 
+@media (max-width: 750px) {
+
+  /* ABOUT ME SECTION */
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .img-left {
+    width: 65%;
+  }
+
+  .text-right {
+    width: 100%;
+  }
+}
+
 /* Mobile */
 @media (max-width: 600px) {
-
   .section-heading {
     text-align: center;
   }
@@ -366,7 +375,6 @@ button:hover {
   }
 
   /* ABOUT ME SECTION */
-
   .img-text-section {
     padding: 15% 0;
   }
@@ -387,7 +395,6 @@ button:hover {
   }
 
   /* SKILLS SECTION */
-
   #section4 .slick-dots {
     bottom: -50px;
   }
