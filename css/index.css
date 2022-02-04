@@ -244,17 +244,37 @@ button:hover {
 }
 
 /* WHY HIRE ME SECTION */
+
+#section5 .img-left {
+  /* width: 40%; */
+}
+
 .why-container {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
+}
+
+.why {
+  display: flex;
+  align-items: flex-start
+}
+
+.why img {
+  width: 50px;
+}
+
+.number {
+  margin-left: 10px;
+  position: relative;
+  top: -18px;
 }
 
 .why-container:first-of-type {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.why .number p{
+.why .number p:first-of-type {
   font-size: 3.5rem;
   font-family: 'Archivo Black', sans-serif;
   margin: 0;
