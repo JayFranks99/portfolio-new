@@ -289,6 +289,38 @@ button:hover {
   line-height: 1.25;
 }
 
+
+/* CONTACT ME SECTION */
+
+#section6 {
+  text-align: center;
+  padding: 75px 0;
+  background: #fcfcfc;
+  margin-top: 50px;
+}
+
+#section6 .flex-container {
+  width: 50%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+#section6 .flex-container p:first-of-type {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5rem;
+}
+
+#section6 .flex-container p:last-of-type {
+  font-size: 1rem;
+}
+
+#section6 img {
+  width: 55px;
+}
+
+
+
+
 /* Large screens */
 @media (min-width: 1500px) {
   .hero-div {
