@@ -246,18 +246,22 @@ button:hover {
 /* WHY HIRE ME SECTION */
 
 #section5 .img-left {
-  /* width: 40%; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .why-container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
 }
 
 .why {
   display: flex;
   align-items: flex-start
+}
+
+.why:first-of-type {
+  margin-bottom: 40px;
 }
 
 .why img {
@@ -270,9 +274,9 @@ button:hover {
   top: -18px;
 }
 
-.why-container:first-of-type {
-  margin-bottom: 40px;
-}
+/* .why-container:first-of-type {
+  margin-bottom: 50px;
+} */
 
 .why .number p:first-of-type {
   font-size: 3.5rem;
