@@ -245,6 +245,10 @@ button:hover {
 
 /* WHY HIRE ME SECTION */
 
+#section5 .section-heading.mobile {
+  display: none;
+}
+
 #section5 .img-left {
   display: flex;
   justify-content: space-between;
@@ -261,11 +265,14 @@ button:hover {
 }
 
 .why:first-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .why img {
   width: 50px;
+  height: 50px;
+  position: relative;
+  top: -15px;
 }
 
 .number {
@@ -279,7 +286,7 @@ button:hover {
 } */
 
 .why .number p:first-of-type {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: 'Archivo Black', sans-serif;
   margin: 0;
 }
@@ -457,5 +464,28 @@ button:hover {
   /* SKILLS SECTION */
   #section4 .slick-dots {
     bottom: -50px;
+  }
+
+  /* THE NUMBERS */
+  #section5 .img-left {
+    width: 100%;
+  }
+
+  .why p {
+    line-height: 1.25;
+    width: 70%;
+  }
+
+  #section5 .section-heading {
+    display: none;
+  }
+
+  #section5 .section-heading.mobile {
+    display: block;
+    margin-bottom: 55px;
+  }
+
+  .text-right div:last-of-type {
+    margin-bottom: 35px;
   }
 }
