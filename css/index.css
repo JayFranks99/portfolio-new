@@ -271,19 +271,12 @@ button:hover {
 .why img {
   width: 50px;
   height: 50px;
-  position: relative;
-  top: -15px;
 }
 
 .number {
   margin-left: 10px;
-  position: relative;
-  top: -18px;
 }
 
-/* .why-container:first-of-type {
-  margin-bottom: 50px;
-} */
 
 .why .number p:first-of-type {
   font-size: 2.5rem;
@@ -383,6 +376,15 @@ button:hover {
 
   .text-right {
     width: 100%;
+  }
+
+  /* #section5 .flex-container {
+    align-items: flex-start;
+  } */
+
+  #section5 .img-left {
+    width: 80%;
+    margin-bottom: 25px;
   }
 }
 
