@@ -68,8 +68,8 @@
 }
 
 .item {
-  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
   padding: 22.5% 10% 17.5%;
   margin: 0 15px;
   background: #FFFFFF;
@@ -77,6 +77,13 @@
   margin-bottom: 20px;
   /* Added to avoid shadow issues */
   min-height: 280px;
+  transition: all 0.5s;
+}
+
+
+.item:hover {
+  box-shadow: 0px 0px 15px rgb(181 181 181);
+  -webkit-box-shadow: 0px 0px 15px rgb(181 181 181);
 }
 
 .heading {
