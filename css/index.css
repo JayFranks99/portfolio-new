@@ -195,16 +195,29 @@ button:hover {
 }
 
 /* About Me Section */
+
+.border-div {
+  width: 90%;
+  border: solid 15px #008ECC;
+  height: 98%;
+  position: absolute;
+  z-index: -1;
+  left: -35px;
+  top: 40px;
+}
+
 .img-text-section {
   padding: 5% 0;
 }
 
 .img-left {
   width: 37.5%;
+  position: relative;
+  left: 35px;
 }
 
 .img-left img {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
