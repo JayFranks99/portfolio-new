@@ -5,6 +5,7 @@ p {
   padding: 0;
   font-family: 'Archivo', sans-serif;
   color: var(--primary);
+  font-size: 1rem;
 }
 
 * {
@@ -94,7 +95,7 @@ button:hover {
 /* Style defualts mobile */
 @media (max-width: 600px) {
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .j-container {
@@ -122,6 +123,7 @@ button:hover {
 }
 
 /*---------- LAPTOP---------- */
+
 /* HERO SECTION */
 .hero-container {
   display: flex;
@@ -147,7 +149,7 @@ button:hover {
 }
 
 .hero-text p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: var(--grey);
   margin: 7.5px 0 20px;
   width: 57.5%;
@@ -231,7 +233,7 @@ button:hover {
 
 .text-right p {
   margin: 10px 0;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: var(--grey);
 }
 
@@ -297,10 +299,11 @@ button:hover {
 
 .why p {
   line-height: 1.25;
+  font-size: 0.9rem;
+  width: 80%;
 }
 
 /* CONTACT ME SECTION */
-
 #section6 {
   text-align: center;
   padding: 75px 0;
@@ -317,10 +320,6 @@ button:hover {
   font-size: 1.5rem !important;
 }
 
-#section6 .flex-container .link p {
-  font-size: 1rem;
-}
-
 #section6 img {
   width: 55px;
   transition: all .2s;
@@ -333,6 +332,10 @@ button:hover {
 
 #section6 .flex-container div {
   width: 33.3%;
+}
+
+.desc-mobile {
+  display: none;
 }
 
 /* Large screens */
@@ -435,21 +438,18 @@ button:hover {
     width: 100%;
   }
 
-
   /* WHY ME SECTION */
-
   .why-left {
     width: 80%;
     margin-bottom: 25px;
   }
 
   /* CONTACT SECTION */
-
   #section6 .flex-container {
     flex-direction: row;
   }
 
-  #section6 div:nth-child(3) {
+  #section6 .flex-container div:nth-child(3) {
     display: none;
   }
 
@@ -459,8 +459,8 @@ button:hover {
 }
 
 /* Mobile */
-
 @media (max-width: 600px) {
+
   .section-heading {
     text-align: center;
   }
@@ -494,7 +494,7 @@ button:hover {
 
   .hero-text p {
     margin: 10px auto 25px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   .down-arrow {
@@ -558,7 +558,6 @@ button:hover {
   }
 
   /* THE NUMBERS */
-
   .why-left {
     width: 100%;
   }
@@ -577,7 +576,36 @@ button:hover {
     margin-bottom: 55px;
   }
 
+  .why .number p:first-of-type {
+    font-size: 2rem;
+  }
+
   .text-right div:last-of-type {
     margin-bottom: 35px;
+  }
+
+  /* CONTACT ME */
+
+  #section6 .flex-container {
+    width: 100%;
+  }
+
+  #section6 .flex-container {
+    padding: 35px 0px;
+  }
+
+  .desc-mobile {
+    display: block;
+    text-align: left;
+  }
+
+  .desc-mobile p {
+    margin: 0 0 10px;
+  }
+
+  #section6 .flex-container p:nth-child(2) {
+    font-size: 1.2rem !important;
+    line-height: 1;
+    margin: 10px 0 5px;
   }
 }

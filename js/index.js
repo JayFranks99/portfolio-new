@@ -1,17 +1,23 @@
 'use strict';
 
 $(document).ready(function() {
-$("#close-nav-btn").click(function(){
-$(".overlay").slideUp(400);
+  $("#close-nav-btn").click(function(){
+    $(".overlay").slideUp(400);
+  });
 });
+
+$(document).ready(function() {
+  $( "div.overlay-content > a" ).click(function(){
+    $(".overlay").slideUp(400);
+  });
 });
 
 $(document).ready(function() {
   $("#hamburger").click(function(){
-  $(".overlay").slideDown(400);
-  $('.overlay').css('display', 'flex');
-  $('.overlay').css('align-items', 'center');
-});
+    $(".overlay").slideDown(400);
+    $('.overlay').css('display', 'flex');
+    $('.overlay').css('align-items', 'center');
+  });
 });
 
 
