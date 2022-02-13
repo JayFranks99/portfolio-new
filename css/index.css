@@ -109,7 +109,11 @@ button:hover {
   }
 
   .j-btn {
-    padding: 9px 20px;
+    padding: 9px 24px;
+    font-size: 0.8rem;
+  }
+
+  .portfolio-btns button {
     font-size: 0.7rem;
   }
 
@@ -199,6 +203,7 @@ button:hover {
   bottom: 30px;
   left: 50%;
   cursor: pointer;
+  z-index: 2;
 }
 
 /* About Me Section */
@@ -212,8 +217,15 @@ button:hover {
   top: 40px;
 }
 
+#section3 {
+  position: relative;
+  background: #fcfcfc;
+  z-index: 0;
+}
+
 .img-text-section {
-  padding: 5% 0;
+  /* padding: 7.5% 0; */
+  padding: 125px 0 150px;
 }
 
 .img-left {
@@ -269,6 +281,12 @@ button:hover {
   justify-content: space-between;
 }
 
+#section5 {
+  position: relative;
+  background: #fcfcfc;
+  padding: 150px 0;
+}
+
 #section5 .section-heading.mobile {
   display: none;
 }
@@ -310,10 +328,11 @@ button:hover {
 
 /* CONTACT ME SECTION */
 #section6 {
+  position: relative;
   text-align: center;
-  padding: 75px 0;
+  padding: 125px 0 75px;
   background: #fcfcfc;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 #section6 .flex-container {
