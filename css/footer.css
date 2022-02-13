@@ -15,7 +15,7 @@ footer p {
   display: none;
 }
 
-.socials img:nth-child(2) {
+.socials a:nth-child(2) {
   margin: 0 35px;
 }
 
@@ -27,6 +27,10 @@ footer p {
 .ftr-desktop div:first-child {
   position: absolute;
   left: 0;
+}
+
+.ftr-desktop div:first-child img {
+  width: 60px;
 }
 
 .ftr-desktop .copyright {
