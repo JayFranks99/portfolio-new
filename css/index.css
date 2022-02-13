@@ -62,6 +62,11 @@ button:hover {
   -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
 }
 
+.j-btn:hover {
+  background: none;
+  color: var(--primary);
+}
+
 .j-btn2 {
   background: none;
   border: solid 3px var(--primary);

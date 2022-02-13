@@ -23,13 +23,24 @@
   -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
 }
 
+/* Preventing default j-btn styles for section toggle */
+.portfolio-btns .j-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.portfolio-btns .j-btn3:hover {
+  background: none;
+  color: var(--primary);
+}
+
 /* Skills section */
 #section4 {
   padding: 100px 0;
 }
 
 #skills {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #skills img {
@@ -43,6 +54,11 @@
 #skills .item {
   min-height: 300px;
   padding: 12.5% 10%;
+}
+
+/* FIXES BOX SHAOW ISSUE OF BEING CUT OFF */
+.slick-track {
+  padding: 15px 0;
 }
 
 
