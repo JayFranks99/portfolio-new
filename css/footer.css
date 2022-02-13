@@ -34,7 +34,24 @@ footer p {
   right: 0;
 }
 
-@media(max-width:600px) {
+.socials img {
+  transition: all .2s;
+}
+
+.socials img:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+@media (max-width:950px) {
+
+  footer .flex-container {
+    flex-direction: column;
+  }
+
+  .ftr-desktop div:first-child img {
+    display: none;
+  }
 
   .ftr-desktop,
   .ftr-desktop div:first-child,
@@ -62,6 +79,7 @@ footer p {
 
   footer hr {
     margin: 30px 0;
+    border: 1px solid #4e4c4c;
   }
 
 }

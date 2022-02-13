@@ -411,11 +411,6 @@ button:hover {
     margin: 20px auto;
     width: 100%;
   }
-
-  /* Contact me */
-  #section6 .flex-container {
-    width: 90%;
-  }
 }
 
 @media (max-width: 750px) {
