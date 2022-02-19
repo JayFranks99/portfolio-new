@@ -132,6 +132,28 @@ button:hover {
 }
 
 /* ---------------LAPTOP------------------*/
+
+/* Space between sections */
+/* .hero-div {
+  padding: 75px 0 100px;
+} */
+
+#about-section {
+  padding: 125px 0 150px;
+}
+
+#portfolio-section, #skills-section {
+   padding: 75px 0;
+}
+
+#why-section {
+  padding: 125px 0 150px;
+}
+
+#contact-section {
+  padding: 100px 0 50px;
+}
+
 /* -------Hero Section------*/
 #hero-section {
   display: flex;
@@ -139,7 +161,7 @@ button:hover {
   justify-content: center;
   /* background-color: #FCFCFC; */
   position: relative;
-  padding: 100px 0 175px;
+  padding: 100px 0 200px;
 }
 
 .hero-div {
@@ -198,8 +220,9 @@ button:hover {
 }
 
 .down-arrow {
+  /* display: none; */
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   left: 50%;
   cursor: pointer;
   z-index: 2;
@@ -220,11 +243,6 @@ button:hover {
   position: relative;
   background: #fcfcfc;
   z-index: 0;
-}
-
-.img-text-section {
-  /* padding: 7.5% 0; */
-  padding: 125px 0 150px;
 }
 
 .img-left {
@@ -269,10 +287,6 @@ button:hover {
 }
 
 /* -------Skills Section------*/
-#skills-section {
-  padding: 100px 0;
-}
-
 #skills-section .slick-dots {
   bottom: -40px;
 }
@@ -284,13 +298,12 @@ button:hover {
   justify-content: space-between;
 }
 
-#why-me {
+#why-section {
   position: relative;
   background: #fcfcfc;
-  padding: 200px 0;
 }
 
-#why-me .section-heading.mobile {
+#why-section .section-heading.mobile {
   display: none;
 }
 
@@ -333,9 +346,7 @@ button:hover {
 #contact-section {
   position: relative;
   text-align: center;
-  padding: 125px 0 75px;
   background: #fcfcfc;
-  /* margin-top: 50px; */
 }
 
 #contact-section .flex-container {
@@ -365,14 +376,31 @@ button:hover {
   display: none;
 }
 
-/* ---------------LARGE SCREENS-----------------*/
+/* ---------------DESKTOP-----------------*/
 @media (min-width: 1500px) {
 
-  /* -------Hero Section------*/
+  /* Space between sections */
   .hero-div {
-    padding: 50px 0 50px;
+    padding: 75px 0 100px;
   }
 
+  #about-section {
+    padding: 150px 0 175px;
+  }
+
+  #portfolio-section, #skills-section {
+     padding: 100px 0;
+  }
+
+  #why-section {
+    padding: 200px 0;
+  }
+
+  #contact-section {
+    padding: 150px 0 100px;
+  }
+
+  /* -------Hero Section------*/
   .hero-image {
     width: 47.5%;
     right: 7.5%;
@@ -385,7 +413,7 @@ button:hover {
   }
 
   .down-arrow {
-    bottom: -15px;
+    bottom: 35px;
   }
 
   /* Show Front-end Web Developer */
@@ -594,11 +622,11 @@ button:hover {
     width: 70%;
   }
 
-  #why-me .section-heading {
+  #why-section .section-heading {
     display: none;
   }
 
-  #why-me .section-heading.mobile {
+  #why-section .section-heading.mobile {
     display: block;
     margin-bottom: 55px;
   }
