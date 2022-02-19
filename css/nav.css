@@ -170,7 +170,7 @@ a.closebtn:hover, .close-btn:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 350px;
   margin: 5px auto 0;
 }
 
@@ -221,7 +221,7 @@ a.closebtn:hover, .close-btn:hover {
   }
 
   .contact-info {
-    width: 90%;
+    width: 100%;
   }
 
   .overlay a {
