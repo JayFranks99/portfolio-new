@@ -217,7 +217,7 @@ window.onclick = function(event) {
 // If window is less than 600px, hide hamburger, show when scrolled to About Me section
 if($(window).width() <= 600){
 
-  var portfolioSection = document.getElementById('section3');
+  var portfolioSection = document.getElementById('portfolio-section');
   var hamburger = document.getElementById('hamburger');
 
   window.addEventListener("scroll", function() {

@@ -133,7 +133,7 @@ button:hover {
 
 /* ---------------LAPTOP------------------*/
 /* -------Hero Section------*/
-.hero-container {
+#hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,7 +269,11 @@ button:hover {
 }
 
 /* -------Skills Section------*/
-#section4 .slick-dots {
+#skills-section {
+  padding: 100px 0;
+}
+
+#skills-section .slick-dots {
   bottom: -40px;
 }
 
@@ -280,13 +284,13 @@ button:hover {
   justify-content: space-between;
 }
 
-#section5 {
+#why-me {
   position: relative;
   background: #fcfcfc;
-  padding: 150px 0;
+  padding: 200px 0;
 }
 
-#section5 .section-heading.mobile {
+#why-me .section-heading.mobile {
   display: none;
 }
 
@@ -326,7 +330,7 @@ button:hover {
 }
 
 /* -------Contact Me Section------*/
-#section6 {
+#contact-section {
   position: relative;
   text-align: center;
   padding: 125px 0 75px;
@@ -334,26 +338,26 @@ button:hover {
   /* margin-top: 50px; */
 }
 
-#section6 .flex-container {
+#contact-section .flex-container {
   padding: 50px 0;
 }
 
-#section6 .flex-container p:nth-child(2) {
+#contact-section .flex-container p:nth-child(2) {
   font-family: 'Archivo Black', sans-serif;
   font-size: 1.5rem !important;
 }
 
-#section6 img {
+#contact-section img {
   width: 55px;
   transition: all .2s;
 }
 
-#section6 img:hover {
+#contact-section img:hover {
   cursor: pointer;
   opacity: .8;
 }
 
-#section6 .flex-container div {
+#contact-section .flex-container div {
   width: 33.3%;
 }
 
@@ -418,7 +422,7 @@ button:hover {
     width: 100%;
   }
 
-  .hero-container {
+  #hero-section {
     padding: 50px 0;
   }
 
@@ -467,15 +471,15 @@ button:hover {
   }
 
   /* -------Contact Me Section------*/
-  #section6 .flex-container {
+  #contact-section .flex-container {
     flex-direction: row;
   }
 
-  #section6 .flex-container div:nth-child(3) {
+  #contact-section .flex-container div:nth-child(3) {
     display: none;
   }
 
-  #section6 .flex-container div {
+  #contact-section .flex-container div {
     width: 50%;
   }
 }
@@ -488,7 +492,7 @@ button:hover {
     text-align: center;
   }
 
-  .hero-container {
+  #hero-section {
     padding: 0 0 50px;
   }
 
@@ -576,7 +580,7 @@ button:hover {
   }
 
   /* -------Skills Section------*/
-  #section4 .slick-dots {
+  #skills-section .slick-dots {
     bottom: -50px;
   }
 
@@ -590,11 +594,11 @@ button:hover {
     width: 70%;
   }
 
-  #section5 .section-heading {
+  #why-me .section-heading {
     display: none;
   }
 
-  #section5 .section-heading.mobile {
+  #why-me .section-heading.mobile {
     display: block;
     margin-bottom: 55px;
   }
@@ -608,11 +612,11 @@ button:hover {
   }
 
   /* -------Contact Me Section------*/
-  #section6 .flex-container {
+  #contact-section .flex-container {
     width: 100%;
   }
 
-  #section6 .flex-container {
+  #contact-section .flex-container {
     padding: 35px 0px;
   }
 
@@ -625,7 +629,7 @@ button:hover {
     margin: 0 0 10px;
   }
 
-  #section6 .flex-container p:nth-child(2) {
+  #contact-section .flex-container p:nth-child(2) {
     font-size: 1.2rem !important;
     line-height: 1;
     margin: 10px 0 5px;
