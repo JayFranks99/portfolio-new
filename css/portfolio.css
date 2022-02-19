@@ -1,5 +1,5 @@
 /* PORTFOLIO */
- .portfolio-section {
+ #portfolio-section {
     padding: 5% 0;
  }
 
@@ -164,7 +164,7 @@
     height: 150px;
   }
 
-  .portfolio-section {
+  #portfolio-section {
     margin: 15% 0;
   }
 
