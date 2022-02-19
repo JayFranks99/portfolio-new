@@ -1,3 +1,22 @@
+.custom-shape-divider-top-1639410087 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1639410087 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-top-1639410087 .shape-fill {
+    fill: #FFFFFF;
+}
 
 .custom-shape-divider-bottom-1638980953 {
   position: absolute;
@@ -23,30 +42,13 @@
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-  .custom-shape-divider-bottom-1638980953 svg {
-    /* width: calc(131% + 1.3px);
-        height: 25px; */
-    width: calc(134% + -105px);
-    height: 40px;
+  .custom-shape-divider-top-1639410087 svg {
+    width: calc(100% + 100px);
+    height: 35px;
   }
-}
 
-.custom-shape-divider-top-1639410087 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1639410087 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 52px;
-}
-
-.custom-shape-divider-top-1639410087 .shape-fill {
-    fill: #FFFFFF;
+  .custom-shape-divider-bottom-1638980953 svg {
+    width: calc(134% + 25px);
+    height: 35px;
+  }
 }

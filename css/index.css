@@ -515,13 +515,22 @@ button:hover {
 /* ---------------MOBILE------------------*/
 @media (max-width: 600px) {
 
+  /* Space between sections */
+  #hero-section {
+    padding: 0 0 100px;
+  }
+
+  #about-section, #why-section {
+    padding: 100px 0;
+  }
+
+  #portfolio-section, #skills-section, #contact-section {
+     padding: 75px 0;
+  }
+
   /* -------Hero Section------*/
   .section-heading {
     text-align: center;
-  }
-
-  #hero-section {
-    padding: 0 0 50px;
   }
 
   .hero-image img {
@@ -554,7 +563,7 @@ button:hover {
 
   .down-arrow {
     left: 45%;
-    bottom: 0;
+    bottom: 50px;
   }
 
   .coding-lang {
