@@ -140,7 +140,7 @@ btn8.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "videos/lcfc.mp4";
+  modalVideo.src = "https://drive.google.com/file/d/1UPNqAfNTzRtpq8L02L20Mtq43AxUurfU/preview";
 }
 
 var btn8 = document.getElementById("avicenna-video");
@@ -177,7 +177,7 @@ btn11.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "videos/doctor.mp4";
+  modalVideo.src = "https://drive.google.com/file/d/1FhyVQKJvtWLuz6z2mNNkQkFiPCnVSbDE/preview";
 }
 
 var btn12 = document.getElementById("boost");
@@ -186,7 +186,7 @@ btn12.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "videos/boost.mp4";
+  modalVideo.src = "https://drive.google.com/file/d/1UPNqAfNTzRtpq8L02L20Mtq43AxUurfU/preview";
 }
 
 // Get the <span> element that closes the modal

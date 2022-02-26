@@ -132,15 +132,13 @@ button:hover {
 }
 
 /* ---------------LAPTOP------------------*/
-
 /* Space between sections */
-
 #about-section {
   padding: 125px 0 150px;
 }
 
 #portfolio-section, #skills-section {
-   padding: 75px 0;
+  padding: 75px 0;
 }
 
 #why-section {
@@ -387,7 +385,7 @@ button:hover {
   }
 
   #portfolio-section, #skills-section {
-     padding: 100px 0;
+    padding: 100px 0;
   }
 
   #why-section {
@@ -402,7 +400,6 @@ button:hover {
   .hero-image {
     width: 47.5%;
     right: 7.5%;
-
   }
 
   /* Zoom out fix */
@@ -435,22 +432,22 @@ button:hover {
 /* ---------------TABLET------------------*/
 @media (max-width: 1100px) {
 
-    /* Space between sections */
-    #hero-section {
-      padding: 0 0 100px;
-    }
+  /* Space between sections */
+  #hero-section {
+    padding: 0 0 100px;
+  }
 
-    #about-section, #why-section {
-      padding: 175px 0;
-    }
+  #about-section, #why-section {
+    padding: 175px 0;
+  }
 
-    #portfolio-section, #skills-section {
-       padding: 125px 0;
-    }
+  #portfolio-section, #skills-section {
+    padding: 125px 0;
+  }
 
-    #contact-section {
-      padding: 125px 0 50px;
-    }
+  #contact-section {
+    padding: 125px 0 50px;
+  }
 
   /* -------Hero Section------*/
   .hero-div {
@@ -476,7 +473,7 @@ button:hover {
 
   .hero-text p {
     margin: 20px auto;
-    width: 60%;
+    width: 75%;
     font-size: 1.1rem;
   }
 
@@ -530,6 +527,14 @@ button:hover {
   }
 }
 
+@media (max-width: 651px) {
+
+  /* Show Front-end Web Developer */
+  .hero-text span {
+    display: inline;
+  }
+}
+
 /* ---------------MOBILE------------------*/
 @media (max-width: 600px) {
 
@@ -543,7 +548,7 @@ button:hover {
   }
 
   #portfolio-section, #skills-section, #contact-section {
-     padding: 75px 0;
+    padding: 75px 0;
   }
 
   /* -------Hero Section------*/
@@ -565,11 +570,6 @@ button:hover {
     color: var(--light_black);
     margin-top: 7.5px;
     line-height: 1.2;
-  }
-
-  /* Show Front-end Web Developer */
-  .hero-text span {
-    display: inline;
   }
 
   .hero-text h2 {
@@ -694,4 +694,71 @@ button:hover {
     line-height: 1;
     margin: 10px 0 5px;
   }
+}
+
+/* Iphone 5/SE */
+@media (max-width: 321px) {
+
+  /* -------Default Styling------*/
+  p {
+    font-size: 0.9rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .section-heading p {
+    font-size: 1.2rem;
+  }
+
+  .heading h2 {
+    font-size: 2rem !important;
+  }
+
+  .j-btn {
+    /* padding: 8px 18px; */
+    font-size: 0.7rem;
+  }
+
+  /* -------Hero Section------*/
+  .hero-div {
+    padding: 0 0 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    margin: 5px auto 15px;
+  }
+
+  .coding-lang {
+    width: 87.5%;
+  }
+
+  .coding-lang img {
+    width: 25px;
+  }
+
+  /* -------The Numbers------*/
+  .why img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .why .number p:first-of-type {
+    font-size: 1.75rem;
+  }
+
+  .why p {
+    font-size: 0.8rem;
+    width: 100%;
+}
 }

@@ -12,7 +12,7 @@
 .p-modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99999;
     left: 0;
     top: 0;
     width: 100%;
@@ -74,8 +74,8 @@
 /* Defualt style added */
 #video01 {
   display: none;
-  width: 70%;
-  height: fit-content;
+  height: 400px;
+  width: 650px;
 }
 
 /* JS class added */
@@ -94,5 +94,9 @@
     .p-modal-content, #video01  {
         width: 100%;
         max-width: 100% !important;
+    }
+
+    #video01 {
+      height: 235px;
     }
 }

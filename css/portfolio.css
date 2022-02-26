@@ -63,13 +63,16 @@
     min-height: 325px;
   }
 
+  #skills h2 {
+    width: 90%;
+  }
+
   #skills img:first-child {
     height: 75px;
   }
 }
 
 #skills h2 {
-  width: 80%;
   margin: 15px auto 10px;
 }
 
@@ -172,8 +175,8 @@
 
 
 @media (max-width: 321px) {
-  .j-btn {
-    padding: 8px 18px;
+  .portfolio-btns button {
+    padding: 7px 18px;
     font-size: 0.65rem;
   }
 }
