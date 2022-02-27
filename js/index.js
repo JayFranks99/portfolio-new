@@ -168,7 +168,7 @@ btn10.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "videos/sonar.mp4";
+  modalVideo.src = "https://drive.google.com/file/d/1vavev-heJP8kQCfoNb_fcKZ2EY3-ZSrL/preview";
 }
 
 var btn11 = document.getElementById("doctor");
@@ -196,12 +196,13 @@ span.onclick = function() {
   modal.style.display = "none";
   modalImg.style.display = "block";
   modalVideo.classList.remove("video");
+  modalVideo.src = "";
   // Reseting  to defualt values due to resetting above based on image / video type
   modalImg.style.maxWidth = "450px";
   modalVideo.style.maxWidth = "70%";
   // Unloads video on modal close, otherwise sounds continues playing
-  $('#video01').get(0).pause();
-  $('#video01').get(0).unload();
+  // $('#video01').get(0).pause();
+  // $('#video01').get(0).unload();
 }
 
 // When the user clicks anywhere outside of the modal, close it
