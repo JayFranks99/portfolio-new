@@ -1,4 +1,4 @@
-/* PORTFOLIO */
+/* -------Portfolio Section------*/
 .portfolio {
   cursor: grab;
 }
@@ -30,54 +30,9 @@
   color: var(--primary);
 }
 
-/* Skills section */
-#section4 {
-  padding: 100px 0;
-}
-
-#skills {
-  padding: 30px 0;
-}
-
-#skills img:first-child {
-  width: 140px;
-  height: 60px;
-  position: unset;
-  box-shadow: unset;
-  -webkit-box-shadow: unset;
-}
-
-#skills .item {
-  min-height: 300px;
-  padding: 12.5% 10%;
-}
-
-/* FIXES BOX SHAOW ISSUE OF BEING CUT OFF */
-.slick-track {
-  padding: 15px 0;
-}
-
-
-@media (min-width: 1400px) {
-  #skills .item {
-    min-height: 325px;
-  }
-
-  #skills h2 {
-    width: 90%;
-  }
-
-  #skills img:first-child {
-    height: 75px;
-  }
-}
-
-#skills h2 {
-  margin: 15px auto 10px;
-}
-
-.portfolio h2 {
+.portfolio h2, #skills h2 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .portfolio p {
@@ -100,10 +55,17 @@
   transition: all 0.5s;
 }
 
-
 .item:hover {
   box-shadow: 0px 0px 15px rgb(181 181 181);
   -webkit-box-shadow: 0px 0px 15px rgb(181 181 181);
+}
+
+#portfolio-section .item img {
+  transition: all 0.2s;
+}
+
+#portfolio-section .item img:hover {
+  opacity: 0.8;
 }
 
 .heading {
@@ -120,13 +82,7 @@
   margin-right: 20px;
 }
 
-
 @media (min-width: 1400px) {
-  .portfolio img {
-    width: 175px;
-    height: 160px;
-  }
-
   .item {
     padding: 22.5% 10% 15%;
   }
@@ -162,12 +118,6 @@
     width: 85%;
     margin: 0 auto 20px;
   }
-
-  .portfolio img {
-    width: 165px;
-    height: 150px;
-  }
-
   .heading span {
     display: none;
   }
@@ -178,5 +128,44 @@
   .portfolio-btns button {
     padding: 7px 18px;
     font-size: 0.65rem;
+  }
+}
+
+
+/* -------Skills Section------*/
+#skills {
+  padding: 30px 0;
+}
+
+#skills img {
+  margin: 0 auto;
+}
+
+#skills .item {
+  min-height: 300px;
+  padding: 12.5% 10%;
+}
+
+#skills p {
+  color: var(--light_grey);
+  font-size: 0.9rem;
+}
+
+#skills h2 {
+  margin: 15px auto 10px;
+}
+
+/* FIXES BOX SHAOW ISSUE OF BEING CUT OFF */
+.slick-track {
+  padding: 15px 0;
+}
+
+@media (min-width: 1400px) {
+  #skills .item {
+    min-height: 325px;
+  }
+
+  #skills h2 {
+    width: 90%;
   }
 }

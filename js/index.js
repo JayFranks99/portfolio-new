@@ -159,7 +159,7 @@ btn9.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "videos/hunter.mp4";
+  modalVideo.src = "https://drive.google.com/file/d/1HY79NL3s3n1Xq8rNAOqsvQHg-MDTXxmS/preview";
 }
 
 var btn10 = document.getElementById("sonar");
@@ -177,7 +177,7 @@ btn11.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1FhyVQKJvtWLuz6z2mNNkQkFiPCnVSbDE/preview";
+  modalVideo.src = "https://drive.google.com/file/d/1UnBX-8b8Q2FFwWYzu9OUmS9vVZ5TanME/preview";
 }
 
 var btn12 = document.getElementById("boost");
@@ -186,7 +186,16 @@ btn12.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1UPNqAfNTzRtpq8L02L20Mtq43AxUurfU/preview";
+  modalVideo.src = "https://drive.google.com/file/d/1jlQLpCLPOb3wUxKfdZH2TFsa7CGsClN_/preview";
+}
+
+var btn13 = document.getElementById("motive");
+btn13.onclick = function() {
+  modal.style.display = "flex";
+  modal.classList.add("video-modal");
+  modalImg.style.display = "none";
+  modalVideo.classList.add("video");
+  modalVideo.src = "https://drive.google.com/file/d/1FhyVQKJvtWLuz6z2mNNkQkFiPCnVSbDE/preview";
 }
 
 // Get the <span> element that closes the modal
