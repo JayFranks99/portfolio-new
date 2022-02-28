@@ -1,12 +1,17 @@
 $(window).on("load", function () {
     $('.slider').slick({
       dots: true,
-      arrows: false,
+      arrows: true,
       infinite: true,
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
       centerMode: false,
+      prevArrow:"<button type='button' class='jay-prev j-btn2'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+      nextArrow:"<button type='button' class='jay-next j-btn'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+     //  customPaging: function(slick,index) {
+     //   return '<a>' + (index + 1) + '</a>';
+     // },
       accessibility: false, // remove border on click for items
       responsive: [{
           breakpoint: 1100,

@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6, li {
   --light_grey: #828282;
   --white: #fff;
   --blue: #008ECC;
+  --shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  --webkit-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
 }
 
 html {
@@ -58,8 +60,8 @@ button:hover {
   font-size: 0.8rem;
   -webkit-transition: all 200ms ease-in-out;
   text-transform: capitalize;
-  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--webkit-shadow);
 }
 
 .j-btn:hover {
@@ -362,6 +364,9 @@ button:hover {
   width: 60px;
   height: 60px;
   transition: all .2s;
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--webkit-shadow);
+  border-radius: 50%;
 }
 
 #contact-section img:hover {

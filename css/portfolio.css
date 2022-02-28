@@ -22,8 +22,8 @@
   border-radius: 20px;
   position: relative;
   top: 40px;
-  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--webkit-shadow);
 }
 
 /* Preventing default j-btn styles for section toggle */

@@ -13,9 +13,38 @@
   bottom: 0px;
 }
 
+/* Slick custom prev,next buttons */
+#portfolio-section .jay-prev, #portfolio-section .jay-next {
+  display: none !important;
+}
+
+/* Inherits j-btn styles, overiding */
+.jay-next, .jay-prev {
+  position: absolute;
+  top: -85px;
+  border-radius: 50%;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.jay-prev {
+  right: 100px;
+}
+
+.jay-next {
+  right: 15px;
+}
+
 @media (min-width:1400px) {
   .slick-dots {
     bottom: -20px;
+  }
+}
+
+@media(max-width: 800px) {
+  .jay-next, .jay-prev {
+    display: none;
   }
 }
 
