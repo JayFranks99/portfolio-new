@@ -1,5 +1,14 @@
 'use strict';
 
+//Logo loader
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  setTimeout(function() {
+    // Add class after 1500ms
+    loader.className += "loader-hide"; //loader hidden
+  }, 1500);
+});
+
 $(document).ready(function() {
   $("#close-nav-btn").click(function(){
     $(".overlay").slideUp(400);

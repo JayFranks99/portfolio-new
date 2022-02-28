@@ -1,0 +1,55 @@
+#loader {
+  opacity: 1;
+  position: fixed;
+  background: #fcfcfc;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+#loader div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader img {
+  box-shadow: var(--shadow);
+  -webkit-box-shadow:var(--webkit-shadow);
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+  animation-timing-function: ease-out;
+}
+
+.loader-hide{
+  animation: fadeOut .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(359deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

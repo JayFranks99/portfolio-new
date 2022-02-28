@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- 192.168.0.9/portfolio-new -->
+  <title>Jay Franks Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME CDN -->
+  <script src="https://kit.fontawesome.com/eea3fcba86.js" crossorigin="anonymous"></script>
+
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- AOS LIBARY -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+  <!-- SLICK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+  <!-- SCROLLSPY -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/scrollspy.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- MAIN STYLESHEETS -->
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/curves.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="card-flip2/main.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+
+</head>
+
+<!-- SCROLL SPY SECTION SYSTEM -->
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
+
+  <div id="loader">
+    <div>
+      <img class="rotate" src="images/jf-logo.png" />
+    </div>
+  </div>
+
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul id=scrolldots class="nav navbar-nav">
+            <li><a href="#desktop-nav"></a></li>
+            <li><a href="#about-section"></a></li>
+            <li><a href="#portfolio-section"></a></li>
+            <li><a href="#why-section"></a></li>
+            <li><a href="#skills-section"></a></li>
+            <li><a href="#contact-section"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVIGATION -->
+  <div id="myNav" class="overlay">
+    <a id="close-nav-btn" href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="main-div">
+      <div class="overlay-content">
+        <a href="#portfolio-section">My Portfolio</a>
+        <a href="#about-section">About Me</a>
+        <a href="#skills-section">Main Skills</a>
+        <a href="#contact-section">Contact Me</a>
+      </div>
+      <div class="div-seperator">
+        <hr class="jay-hr" />
+      </div>
+      <div class="tyi-info">
+        <!-- <img src="images/jf-logo.png"> -->
+        <p>Jay Franks</p>
+        <p>07548675520 | Jay.franks@icloud.com </p>
+        <div class="contact-info">
+          <a href="tel:07548675520"><img src="images/phone.svg" /></a>
+          <a href="mailto:jay.franks@icloud.com"><img src="images/email-icon.svg" /></a>
+          <a href="https://www.linkedin.com/in/jayfranks99/" target="_blank"><img src="images/linkedin.svg" /></a>
+          <a href="https://github.com/JayFranks99" target="_blank"><img src="images/github.svg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DESKTOP NAV -->
+  <div id="desktop-nav">
+    <img class="logo" src="images/jf-logo.png">
+    <button id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- HERO SECTION-->
+  <div id="hero-section">
+
+    <div class="hero-div">
+
+      <div class="hero-text">
+        <h2>Hello, I'm Jay Franks</h2>
+        <h1>Front-end <span>Web</span> Developer</h1>
+        <p>An ambitious individual with valuable experience within e-commerce web development.</p>
+        <div class="coding-lang">
+          <img src="images/html.svg" />
+          <img src="images/css.svg" />
+          <img src="images/js.svg" />
+          <img src="images/php.svg" />
+          <img src="images/wordpress.svg" />
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/jay-dev.png" />
+      </div>
+
+    </div>
+
+    <a href="#about-section"><img class="down-arrow" src="images/down-arrow.svg" /></a>
+
+  </div>
+
+  <!-- IMAGE & VIDEO MODAL FOR PORTFOLIO SECTION - OUTSITE OF SECTION DUE TO SLICK -->
+  <div id="myModal" class="p-modal">
+    <span class="close-btn">&times;</span>
+    <!-- Image modal -->
+    <img id="img01" class="p-modal-content" alt="modal-image">
+    <!-- Video Modal - using Google Drive src in JS -->
+    <iframe id="video01" width="640" height="480" allow="autoplay" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+
+  <!-- ABOUT ME SECTION-->
+  <div id="about-section" class="img-text-section">
+
+    <div class="custom-shape-divider-top-1639410087">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1638980953">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div data-aos="fade-up" class="flex-container j-container">
+
+      <div class="img-left">
+        <div class="border-div"></div>
+        <img src="images/jay-image.jpg" />
+      </div>
+
+      <div class="text-right">
+        <div class="section-heading">
+          <p>About Me</p>
+          <h2>Who Is Jay?</h2>
+        </div>
+
+        <div>
+          <p>I graduated from the University of Leeds in 2020 with a high 2:1 in Digital Media.</p>
+          <p>Have gone onto gaining valuable work experience with Healthy Stuff and Aspex through working in web development. </p>
+        </div>
+
+        <a href="pdf/jay-franks-cv.pdf" target="_blank"><button class="j-btn"><i class="fas fa-angle-double-down"></i>Download CV</button></a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PORTFOLIO SECTION-->
+  <div data-aos="fade-up" id="portfolio-section">
+
+    <div class="heading j-container">
+      <div>
+        <h2><span>My</span> Portfolio</h2>
+      </div>
+      <div class="portfolio-btns">
+        <button id="coding-btn" class="j-btn">CODING</button>
+        <button id="design-btn" class="j-btn j-btn3">DESIGN</button>
+        <button id="digital-btn" class="j-btn j-btn3">DIGITAL</button>
+      </div>
+    </div>
+
+    <!-- CODING PORTFOLIO -->
+    <div class="coding main">
+      <div class="slider portfolio">
+        <!-- FIRST SLIDE -->
+        <div>
+          <a href="https://www.allergytest.co/" target="_blank"><img src="images/portfolio/allergy-test.png" /></a>
+          <div class="item">
+            <h2>Allergy Test</h2>
+            <p>E-commerce allergy & intolerance website built from scratch.</p>
+            <a href="https://www.allergytest.co/" target="_blank"><button class="j-btn">View</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <img src="images/portfolio/motive.png" />
+              <div class="item">
+                <h2>Motive</h2>
+                <p>University of Leeds app for first-year students to make friends.</p>
+                <button class="j-btn">View</button>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <img src="images/portfolio/motive.png" />
+              <div class="item">
+                <h2>Motive</h2>
+                <div>
+                  <p>View App</p>
+                  <img id="motive" src="card-flip2/btn.svg" />
+                </div>
+                <div>
+                  <p>View Website</p>
+                  <img src="card-flip2/btn.svg" />
+                </div>
+                <div>
+                  <p>View Blog</p>
+                  <a href="https://jayfranksdigitalmediaproject.blogspot.com/" target="_blank"><img src="card-flip2/btn.svg" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="https://www.testmyallergy.com/" target="_blank"><img src="images/portfolio/tma.png" /></a>
+          <div class="item">
+            <h2>TMA</h2>
+            <p>Designed & developed the Test My Allergy website for Healthy Stuff.</p>
+            <a href="https://www.testmyallergy.com/" target="_blank"><button class="j-btn">View</button></a>
+          </div>
+        </div>
+        <div>
+          <a href="https://lifelabtesting.com/" target="_blank"><img src="images/portfolio/lifelab.png" /></a>
+          <div class="item">
+            <h2>Lifelab</h2>
+            <p>Various improvements made for the existing Lifelab website.</p>
+            <a href="https://lifelabtesting.com/" target="_blank"><button class="j-btn">View</button></a>
+          </div>
+        </div>
+
+        <!-- SECOND SLIDE -->
+        <div>
+          <a href="https://aspex-uk.co.uk/" target="_blank"><img src="images/portfolio/aspex.png" /></a>
+          <div class="item">
+            <h2>Aspex</h2>
+            <p>Website work for an industry leading building materials company.</p>
+            <a href="https://aspex-uk.co.uk/" target="_blank"><button class="j-btn">View</button></a>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/gemini.png" />
+          <div class="item">
+            <h2>Gemini</h2>
+            <p>Website developed for a conservatory business in Leicester.</p>
+            <button class="j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/russia.png" />
+          <div class="item">
+            <h2>Russia 2018</h2>
+            <p>PHP website for football fans to view the squads for the 2018 World Cup.</p>
+            <a href="pdf/russia.pdf" target="_blank"><button class="j-btn">View</button></a>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/drum.png" />
+          <div class="item">
+            <h2>Drum Kit</h2>
+            <p>A simple JS website developed to allow you to play the drums!</p>
+            <button class="j-btn">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESIGN PORFOLIO -->
+    <div class="design main">
+      <div class="slider portfolio">
+        <!-- FIRST SLIDE -->
+        <div class="card">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <img src="images/portfolio/avicenna.png" />
+              <div class="item">
+                <h2>Avicenna</h2>
+                <p>Poster designs created for Avicenna stores as well as a social video.</p>
+                <button class="j-btn">View</button>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <img src="images/portfolio/avicenna.png" />
+              <div class="item">
+                <h2>Avicenna</h2>
+                <div>
+                  <p>View Poster</p>
+                  <img id="avicenna" src="card-flip2/btn.svg" /></a>
+                </div>
+                <div>
+                  <p>View Video</p>
+                  <img id="avicenna-video" src="card-flip2/btn.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/lifelab.png" />
+          <div class="item">
+            <h2>Lifelab Ads</h2>
+            <p>Graphics created for Lifelab’s Facebook Ads hayfever campaign.</p>
+            <button id="lifelab-button" class="portfolio-btn j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/tma.png" />
+          <div class="item">
+            <h2>TMI</h2>
+            <p>Sales graphics created for Mailchimp mailshot campaigns.</p>
+            <button id="tmi-button" class="j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/healthy-stuff.png" />
+          <div class="item">
+            <h2>Healthy Stuff</h2>
+            <p>Kit graphics produced to be used across Healthy Stuff websites.</p>
+            <button id="hs-kits" class="j-btn">View</button>
+          </div>
+        </div>
+
+        <!-- SECOND SLIDE -->
+        <div>
+          <img src="images/portfolio/altitude.png" />
+          <div class="item">
+            <h2>Altitude</h2>
+            <p>Logo designed for my Altitude ski festival taking place in Japan.</p>
+            <button id="altitude" class="j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/lcfc.png" />
+          <div class="item">
+            <h2>LCFC</h2>
+            <p>Information design piece for Leicester City’s great escape to title winners.</p>
+            <button id="lcfc" class="j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/absolut.png" />
+          <div class="item">
+            <h2>Absolut Jazz</h2>
+            <p>Absolut Vodka web banner design created for Jazz music lovers.</p>
+            <button id="absolut" class="j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/allergy-test.png" />
+          <div class="item">
+            <h2>Awin TYI</h2>
+            <p>Affiliate marketing gifs to target allergy and intolerance sufferers.</p>
+            <button id="awin" class="j-btn">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIGITAL PORFOLIO -->
+    <div class="digital main">
+      <div class="slider portfolio">
+        <!-- FIRST SLIDE -->
+        <div>
+          <img src="images/portfolio/hunter.png" />
+          <div class="item">
+            <h2>The Hunter</h2>
+            <p>Music video created for the song ‘The Hunter’ by Slaves.</p>
+            <button id="hunter" class="j-btn">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <img src="images/portfolio/sonar.png" />
+              <div class="item">
+                <h2>Sonar</h2>
+                <p>Campaign created to help homeless people in Leeds.</p>
+                <button class="j-btn">View</button>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <img src="images/portfolio/sonar.png" />
+              <div class="item">
+                <h2>Sonar</h2>
+                <div>
+                  <p>View Video</p>
+                  <img id="sonar" src="card-flip2/btn.svg" />
+                </div>
+                <div>
+                  <p>View Report</p>
+                  <a href="pdf/sonar-document.pdf" target="_blank"><img src="card-flip2/btn.svg" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/doctor-who.png" />
+          <div class="item">
+            <h2>Doctor Who</h2>
+            <p>Title scene animation created for the hit series Doctor Who.</p>
+            <button id="doctor" class="j-btn">View</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/boost.png" />
+          <div class="item">
+            <h2>Boost</h2>
+            <p>Short animation created to promote Boosts 25th year anniversary.</p>
+            <button id="boost" class="j-btn">View</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY HIRE ME SECTION-->
+  <div id="why-section" class="img-text-section">
+
+    <div class="custom-shape-divider-top-1639410087">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1638980953">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div data-aos="fade-up" class="flex-container j-container">
+
+      <div class="section-heading mobile">
+        <p>The Numbers</p>
+        <h2>Why Hire Me?</h2>
+      </div>
+
+      <div class="why-left">
+
+        <div class="why-container">
+
+          <div class="why">
+            <div>
+              <img src="images/university.svg" />
+            </div>
+            <div class="number">
+              <p>2:1</p>
+              <p>University of Leeds</p>
+            </div>
+          </div>
+
+          <div class="why">
+            <div>
+              <img src="images/laptop.svg" />
+            </div>
+            <div class="number">
+              <p>6</p>
+              <p>Ecommerce Websites</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="why-container">
+
+          <div class="why">
+            <div>
+              <img src="images/marketing.svg" />
+            </div>
+            <div class="number">
+              <p>65k</p>
+              <p>Revenue in a month</p>
+            </div>
+          </div>
+
+          <div class="why">
+            <div>
+              <img src="images/experience.svg" />
+            </div>
+            <div class="number">
+              <p>4</p>
+              <p>Years Experience</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text-right">
+        <div class="section-heading">
+          <p>The Numbers</p>
+          <h2>Why Hire Me?</h2>
+        </div>
+
+        <div>
+          <p>An ambitious Front-End Developer with a proven ability to produce work that meets project briefs and client’s needs.</p>
+          <p>Has valuable experience within e-commerce web development and is fascinated by a/b testing changes to improve sales.</p>
+        </div>
+
+        <a href="#contact-section"><button class="j-btn">Contact Me</button></a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- SKILLS SECTION -->
+  <div data-aos="fade-up" id="skills-section" class="container-fluid">
+
+    <div class="j-container section-heading">
+      <p>Main Skills</p>
+      <h2>What I Can Offer You</h2>
+    </div>
+
+    <div id="skills" class="main">
+      <div class="slider">
+        <!-- FIRST SLIDE -->
+        <div>
+          <div class="item">
+            <img src="images/coding.svg" />
+            <h2>Web Development</h2>
+            <p>I have gained over 4 years experience in creating websites.</p>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <img src="images/design.svg" />
+            <h2>Digital Designing</h2>
+            <p>I excel in web design, UI and UX design as well as graphic design.</p>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <img src="images/speed.svg" />
+            <h2>Speed Optimisation</h2>
+            <p>I have a track record of improving a websites google speed score.</p>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <img src="images/SEO.svg" />
+            <h2>SEO Optimisation</h2>
+            <p>I have a track record of improving a websites overall SEO score.</p>
+          </div>
+        </div>
+
+        <!-- SECOND SLIDE -->
+        <div>
+          <div class="item">
+            <img src="images/marketing.svg" />
+            <h2>Digital Marketing</h2>
+            <p>Experienced gained from working at Healthy Stuff and Aspex.</p>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <img src="images/email-dev.svg" />
+            <h2>Email Development</h2>
+            <p>Whether it is building from scratch or using systems like Mailchimp.</p>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <img src="images/r&a.svg" />
+            <h2>Research & Analysis</h2>
+            <p>I specialise in identifying the potential and flaws in digital media.</p>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <img src="images/android.svg" />
+            <h2>App Development</h2>
+            <p>App development skills gained from my final year project at University.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT ME SECTION-->
+  <div id="contact-section">
+
+    <div class="custom-shape-divider-top-1639410087">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div data-aos="fade-up" class="j-container">
+
+      <div class="section-heading mobile">
+        <p>Contact Me</p>
+        <h2>Let’s Work Together!</h2>
+      </div>
+
+      <div class="flex-container">
+
+        <div>
+          <a href="tel:07548675520"><img src="images/phone-blue.svg" /></a>
+          <p>Ring Me!</p>
+          <a class="link" href="tel:07548675520">
+            <p>07548675520</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="mailto:jay.franks@icloud.com"><img src="images/email-blue.svg" /></a>
+          <p>Email Me!</p>
+          <a class="link" href="mailto:jay.franks@icloud.com">
+            <p>jay.franks@icloud.com</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/jayfranks99/" target="_blank"><img src="images/linkedin-blue.svg" /></a>
+          <p>Message me!</p>
+          <a class="link" href="https://www.linkedin.com/in/jayfranks99/" target="_blank">
+            <p>Jay Franks</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="desc-mobile">
+        <p>I am currently looking for full-time employment as a Front-end Web Developer.</p>
+        <p>Please get in contact if there are job opportunities that would suit me. Thanks in advance, Jay.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER SECTION-->
+  <footer>
+
+    <div class="j-container">
+
+      <div class="ftr-mobile-links">
+
+
+        <a href="#desktop-nav"><img src="images/jf-logo.png"></a>
+
+        <h4>Important Links</h4>
+
+        <a href="#portfolio-section">
+          <p>My Portfolio</p>
+        </a>
+        <a href="#about-section">
+          <p>About Me</p>
+        </a>
+        <a href="pdf/jay-franks-cv.pdf" target="_blank">
+          <p>Download CV</p>
+        </a>
+
+        <h4>Contact Information</h4>
+        <a href="tel:07548675520">
+          <p>T: 07548675520</p>
+        </a>
+        <a href="mailto:jay.franks@icloud.com">
+          <p>E: Jay.franks@icloud.com</p>
+        </a>
+      </div>
+
+      <div class="seperator">
+        <hr />
+      </div>
+
+      <div class="ftr-desktop flex-container">
+
+        <div>
+          <a href="#desktop-nav"><img src="images/jf-logo.png"></a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/JayFranks99" target="_blank"><img src="images/github.svg"></a>
+          <a href="https://www.linkedin.com/in/jayfranks99/" target="_blank"><img src="images/linkedin.svg"></a>
+          <a href="tel:07548675520"><img src="images/phone.svg"></a>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright © 2021 Jay Franks</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <!-- SLICK -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- Animate on scroll libary -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JAY SLICK -->
+  <script src="js/slick.js"></script>
+
+  <!-- CARD FLIP -->
+  <script src="card-flip2/main.js"></script>
+
+  <!-- MAIN JS FILE -->
+  <script src="js/index.js"></script>
+
+  <!-- <script>
+    $(function() {
+      AOS.init({
+        offset: 0,
+        duration: 1250,
+      });
+    });
+
+    $(window).on('load', function() {
+      AOS.refresh();
+    });
+  </script> -->
+
+</body>
+
+</html>
