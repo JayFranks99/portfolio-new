@@ -213,6 +213,8 @@ button:hover {
 
 .coding-lang img {
   margin: 0 25px 0 0;
+  width: 40px;
+  height: 35px;
 }
 
 .down-arrow {
@@ -222,6 +224,8 @@ button:hover {
   left: 50%;
   cursor: pointer;
   z-index: 2;
+  width: 32.5px;
+  height: 47.5px;
 }
 
 /* -------About Me Section------*/
@@ -355,7 +359,8 @@ button:hover {
 }
 
 #contact-section img {
-  width: 55px;
+  width: 60px;
+  height: 60px;
   transition: all .2s;
 }
 

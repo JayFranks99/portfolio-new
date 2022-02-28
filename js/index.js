@@ -149,8 +149,8 @@ btn8.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.style.maxWidth = "400px";
-  modalVideo.src = "videos/avicenna.mp4";
+  // modalVideo.style.maxWidth = "400px";
+  modalVideo.src = "https://drive.google.com/file/d/1GhFz3qJ80N0znS4Sgaq6Nef-RwR9B47f/preview";
 }
 
 var btn9 = document.getElementById("hunter");

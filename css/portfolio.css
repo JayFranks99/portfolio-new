@@ -3,11 +3,18 @@
   cursor: grab;
 }
 
+/* .slider > div:not(:first-child) {
+    display: none;
+}
+.slider > div:first-child {
+    padding: 0 20px;
+} */
+
 .portfolio div {
   text-align: center;
 }
 
-.portfolio img:first-child {
+.portfolio img {
   width: 155px;
   height: 140px;
   text-align: center;
