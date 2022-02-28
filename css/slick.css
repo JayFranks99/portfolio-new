@@ -44,7 +44,7 @@
 
 @media(max-width: 800px) {
   .jay-next, .jay-prev {
-    display: none;
+    display: none !important;
   }
 }
 

@@ -11,7 +11,7 @@ body {
 #scrolldots {
   position: fixed;
   right: 0;
-  top: 45%;
+  top: 40%;
   z-index: 999;
   width: 1.5rem;
   list-style: none;
