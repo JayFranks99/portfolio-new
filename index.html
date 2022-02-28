@@ -167,7 +167,7 @@
       </svg>
     </div>
 
-    <div class="flex-container j-container">
+    <div data-aos="fade-up" class="flex-container j-container">
 
       <div class="img-left">
         <div class="border-div"></div>
@@ -192,7 +192,7 @@
   </div>
 
   <!-- PORTFOLIO SECTION-->
-  <div id="portfolio-section">
+  <div data-aos="fade-up" id="portfolio-section">
 
     <div class="heading j-container">
       <div>
@@ -470,7 +470,7 @@
       <h2>Why Hire Me?</h2>
     </div>
 
-    <div class="flex-container j-container">
+    <div data-aos="fade-up" class="flex-container j-container">
 
       <div class="why-left">
 
@@ -543,7 +543,7 @@
 
 
   <!-- SKILLS SECTION -->
-  <div id="skills-section" class="container-fluid">
+  <div data-aos="fade-up" id="skills-section" class="container-fluid">
 
     <div class="j-container section-heading">
       <p>Main Skills</p>
@@ -624,7 +624,7 @@
       </svg>
     </div>
 
-    <div class="j-container">
+    <div data-aos="fade-up" class="j-container">
 
       <div class="section-heading mobile">
         <p>Contact Me</p>
@@ -676,7 +676,7 @@
       <div class="ftr-mobile-links">
 
 
-        <a href="#hero-section"><img src="images/jf-logo.png"></a>
+        <a href="#desktop-nav"><img src="images/jf-logo.png"></a>
 
         <h4>Important Links</h4>
 
@@ -704,7 +704,7 @@
       <div class="ftr-desktop flex-container">
 
         <div>
-          <a href="#hero-section"><img src="images/jf-logo.png"></a>
+          <a href="#desktop-nav"><img src="images/jf-logo.png"></a>
         </div>
 
         <div class="socials">
@@ -729,6 +729,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+  <!-- Animate on scroll libary -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- JAY SLICK -->
   <script src="js/slick.js"></script>
 
@@ -737,6 +740,19 @@
 
   <!-- MAIN JS FILE -->
   <script src="js/index.js"></script>
+
+  <script>
+  $(function() {
+    AOS.init({
+      offset: 0,
+      duration: 1250,
+    });
+  });
+
+  $(window).on('load', function() {
+    AOS.refresh();
+  });
+  </script>
 
 </body>
 
