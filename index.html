@@ -20,8 +20,8 @@
   <!-- FONT AWESOME CDN -->
   <script src="https://kit.fontawesome.com/eea3fcba86.js" crossorigin="anonymous"></script>
 
+  <!-- JQUERY CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 
   <!-- AOS LIBARY -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -48,9 +48,7 @@
 
 </head>
 
-
 <!-- SCROLL SPY SECTION SYSTEM -->
-<!-- data-offset can tweak viewport settings for scroll -->
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
 
   <nav class="navbar navbar-fixed-top">
@@ -106,7 +104,6 @@
   <!-- DESKTOP NAV -->
   <div id="desktop-nav">
     <img class="logo" src="images/jf-logo.png">
-    <!-- <span id="hamburger" onclick="openNav()">&#9776;</span> -->
     <button id="hamburger">
       <span></span>
       <span></span>
@@ -119,7 +116,7 @@
 
     <div class="hero-div">
 
-      <div id="jay-test" class="hero-text">
+      <div class="hero-text">
         <h2>Hello, I'm Jay Franks</h2>
         <h1>Front-end <span>Web</span> Developer</h1>
         <p>An ambitious individual with valuable experience within e-commerce web development.</p>
@@ -130,7 +127,6 @@
           <img src="images/php.svg" />
           <img src="images/wordpress.svg" />
         </div>
-
       </div>
 
       <div class="hero-image">
@@ -148,7 +144,7 @@
     <span class="close-btn">&times;</span>
     <!-- Image modal -->
     <img id="img01" class="p-modal-content" alt="modal-image">
-    <!-- Video Modal - using Google Drive Src in JS -->
+    <!-- Video Modal - using Google Drive src in JS -->
     <iframe id="video01" width="640" height="480" allow="autoplay" allowfullscreen="allowfullscreen"></iframe>
   </div>
 
@@ -465,12 +461,12 @@
       </svg>
     </div>
 
-    <div class="section-heading mobile">
-      <p>The Numbers</p>
-      <h2>Why Hire Me?</h2>
-    </div>
-
     <div data-aos="fade-up" class="flex-container j-container">
+
+      <div class="section-heading mobile">
+        <p>The Numbers</p>
+        <h2>Why Hire Me?</h2>
+      </div>
 
       <div class="why-left">
 
@@ -686,7 +682,9 @@
         <a href="#about-section">
           <p>About Me</p>
         </a>
-        <a href="pdf/jay-franks-cv.pdf" target="_blank"><p>Download CV</p></a>
+        <a href="pdf/jay-franks-cv.pdf" target="_blank">
+          <p>Download CV</p>
+        </a>
 
         <h4>Contact Information</h4>
         <a href="tel:07548675520">
@@ -742,16 +740,16 @@
   <script src="js/index.js"></script>
 
   <script>
-  $(function() {
-    AOS.init({
-      offset: 0,
-      duration: 1250,
+    $(function() {
+      AOS.init({
+        offset: 0,
+        duration: 1250,
+      });
     });
-  });
 
-  $(window).on('load', function() {
-    AOS.refresh();
-  });
+    $(window).on('load', function() {
+      AOS.refresh();
+    });
   </script>
 
 </body>

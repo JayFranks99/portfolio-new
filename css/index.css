@@ -497,7 +497,7 @@ button:hover {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
 
   /* -------Contact Me Section------*/
   .flex-container {
