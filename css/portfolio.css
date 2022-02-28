@@ -3,6 +3,12 @@
   cursor: grab;
 }
 
+/* .no-js .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
 /* .slider > div:not(:first-child) {
     display: none;
 }
@@ -12,6 +18,11 @@
 
 .portfolio div {
   text-align: center;
+  /* width: 300px; */
+}
+
+.card {
+  margin: unset !important;
 }
 
 .portfolio img {

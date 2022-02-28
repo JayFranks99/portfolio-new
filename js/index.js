@@ -1,13 +1,17 @@
 'use strict';
 
-//Logo loader
-window.addEventListener("load", function() {
-  const loader = document.getElementById("loader");
-  setTimeout(function() {
-    // Add class after 1500ms
-    loader.className += "loader-hide"; //loader hidden
-  }, 1500);
+// Loader function - if no JS, loader doesn't show
+$('body').append('<div id="loader"><img class="rotate" src="images/jf-logo.png" /></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
 });
+function removeLoader(){
+    $( "#loader" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loader" ).remove(); //makes page more lightweight
+  });
+}
+// End of loader function
 
 $(document).ready(function() {
   $("#close-nav-btn").click(function(){

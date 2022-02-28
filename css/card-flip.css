@@ -1,5 +1,6 @@
 .card {
   perspective: 1000px;
+  margin: unset !important;
 }
 
 .card__inner {
