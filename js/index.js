@@ -1,7 +1,9 @@
 'use strict';
 
-// Loader function - if no JS, loader doesn't show
-$('body').append('<div id="loader"><img class="rotate" src="images/jf-logo.png" /></div>');
+// Loader function
+
+// $('body').append('<div id="loader"><img class="rotate" src="images/jf-logo.png" /></div>'); (APPEND CAUSES INITIAL SHOWING OF WEBPAGE, THEN SHOWS LOADER)
+
 $(window).on('load', function(){
   setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
 });
