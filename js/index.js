@@ -240,14 +240,14 @@ window.onclick = function(event) {
 //////////////////// END OF MODAL CODE///////////////////
 
 
-// If window is less than 600px, hide hamburger, show when scrolled to About Me section
+// If window is less than 600px, hide hamburger, show when scrolled to Why Me section
 if($(window).width() <= 600){
 
-  var portfolioSection = document.getElementById('portfolio-section');
+  var aboutSection = document.getElementById('about-section');
   var hamburger = document.getElementById('hamburger');
 
   window.addEventListener("scroll", function() {
-    if (window.scrollY > (portfolioSection.offsetTop)) {
+    if (window.scrollY > (aboutSection.offsetTop)) {
         hamburger.style.opacity = "1";
         hamburger.classList.add("nav-active");
     }
