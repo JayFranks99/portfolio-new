@@ -167,7 +167,7 @@ button:hover {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 75px;
+  padding: 0 0 50px;
 }
 
 .hero-text {
@@ -477,7 +477,7 @@ button:hover {
   .hero-text {
     order: 2;
     width: 90%;
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: center;
   }
 
@@ -571,7 +571,8 @@ button:hover {
   }
 
   .hero-image img {
-    height: 320px;
+    height: 300px;
+    object-fit: cover;
   }
 
   .hero-text h1 {
@@ -733,7 +734,11 @@ button:hover {
 
   /* -------Hero Section------*/
   .hero-div {
-    padding: 0 0 50px;
+    padding: 0 0 45px;
+  }
+
+  .hero-image img {
+    height: 250px;
   }
 
   .hero-text h1 {
