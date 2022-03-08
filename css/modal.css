@@ -72,14 +72,11 @@
   display: block !important;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    #imgModal, #videoModal  {
-        width: 100%;
-        max-width: 100% !important;
-    }
-
-    #videoModal {
+/* 100%  Width on Smaller Screens */
+@media only screen and (max-width: 416px) {
+   #videoModal  {
+      width: 100%;
+      max-width: 100% !important;
       height: 235px;
     }
 }

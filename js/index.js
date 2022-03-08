@@ -120,7 +120,7 @@ avicennaPoster.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/avicenna.jpg";
   modalImg.style.maxWidth = "350px";
-  modalImg.style.width = "90%"
+  // modalImg.style.width = "80%"
 }
 
 var avicennaVid = document.getElementById("avicenna-video");
@@ -157,6 +157,7 @@ var altitude = document.getElementById("altitude");
 altitude.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/altitude.png";
+  // modalImg.style.width = "80%";
 }
 
 var lcfc = document.getElementById("lcfc");
@@ -172,7 +173,8 @@ var absolut = document.getElementById("absolut");
 absolut.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/absolut.jpg";
-  modalImg.style.maxWidth = "225px";
+  modalImg.style.maxWidth = "250px";
+  modalImg.style.width = "55%";
 }
 
 var awinTyi = document.getElementById("awin");
