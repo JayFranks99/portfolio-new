@@ -1,9 +1,8 @@
 'use strict';
 
-// Loader function
+//-----Loader function-----//
 
 // $('body').append('<div id="loader"><img class="rotate" src="images/jf-logo.png" /></div>'); (APPEND CAUSES INITIAL SHOWING OF WEBPAGE, THEN SHOWS LOADER)
-
 $(window).on('load', function(){
   setTimeout(removeLoader, 1000); //wait for page load PLUS X seconds.
 });
@@ -13,7 +12,8 @@ function removeLoader(){
       $( "#loader" ).remove(); //makes page more lightweight
   });
 }
-// End of loader function
+
+//-----Show hide nav-----//
 
 $(document).ready(function() {
   $("#close-nav-btn").click(function(){
@@ -36,7 +36,8 @@ $(document).ready(function() {
 });
 
 
-// Slick slider toggle
+//-----Portfolio button toggle-----//
+
 $(document).ready(function(){
 
   $(".coding").show();
@@ -78,7 +79,6 @@ $(document).ready(function(){
   });
 });
 
-
 // Doesn't work due to slick, alternative way used
 // let portfolioBtn = document.getElementsByClassName("portfolio-btn");
 // let i;
@@ -93,10 +93,9 @@ $(document).ready(function(){
 //     });
 // }
 
-
 /////////////////START OF MODAL CODE ///////////////////
 
-// MODAL CODE - ONE MODAL - ASSIGN BUTTON IDS - CHANGE IMAGE URL BASED ON BTN CLICK
+// MODAL CODE - ONE MODAL - ASSIGN BUTTON IDS - CHANGE IMAGE / VIDEO URL BASED ON BTN CLICK
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -104,6 +103,35 @@ var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 // Getting the video
 var modalVideo = document.getElementById("video01");
+
+//CODING PORTFOLIO
+var motive = document.getElementById("motive");
+motive.onclick = function() {
+  modal.style.display = "flex";
+  modal.classList.add("video-modal");
+  modalImg.style.display = "none";
+  modalVideo.classList.add("video");
+  modalVideo.src = "https://drive.google.com/file/d/1BOlaKJcf4suouxp0FFlfL86lzKXI0Gx0/preview";
+}
+
+//DESIGN PORTFOLIO
+var avicennaPoster = document.getElementById("avicenna");
+avicennaPoster.onclick = function() {
+  modal.style.display = "flex";
+  modalImg.src = "images/portfolio-main/avicenna.jpg";
+  modalImg.style.maxWidth = "350px";
+  modalImg.style.width = "90%"
+}
+
+var avicennaVid = document.getElementById("avicenna-video");
+avicennaVid.onclick = function() {
+  modal.style.display = "flex";
+  modal.classList.add("video-modal");
+  modalImg.style.display = "none";
+  modalVideo.classList.add("video");
+  // modalVideo.style.maxWidth = "400px";
+  modalVideo.src = "https://drive.google.com/file/d/1GhFz3qJ80N0znS4Sgaq6Nef-RwR9B47f/preview";
+}
 
 var lifelabAds = document.getElementById("lifelab-button");
 lifelabAds.onclick = function() {
@@ -116,14 +144,6 @@ tmiSales.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/tmi-sales.jpg";
   modalImg.style.maxWidth = "800px";
-}
-
-var avicennaPoster = document.getElementById("avicenna");
-avicennaPoster.onclick = function() {
-  modal.style.display = "flex";
-  modalImg.src = "images/portfolio-main/avicenna.jpg";
-  modalImg.style.maxWidth = "350px";
-  modalImg.style.width = "90%"
 }
 
 var hsKits = document.getElementById("hs-kits");
@@ -139,19 +159,6 @@ altitude.onclick = function() {
   modalImg.src = "images/portfolio-main/altitude.png";
 }
 
-var awinTyi = document.getElementById("awin");
-awinTyi.onclick = function() {
-  modal.style.display = "flex";
-  modalImg.src = "images/portfolio-main/awin.gif";
-}
-
-var absolut = document.getElementById("absolut");
-absolut.onclick = function() {
-  modal.style.display = "flex";
-  modalImg.src = "images/portfolio-main/absolut.jpg";
-  modalImg.style.maxWidth = "225px";
-}
-
 var lcfc = document.getElementById("lcfc");
 lcfc.onclick = function() {
   modal.style.display = "flex";
@@ -161,16 +168,20 @@ lcfc.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1UPNqAfNTzRtpq8L02L20Mtq43AxUurfU/preview";
 }
 
-var avicennaVid = document.getElementById("avicenna-video");
-avicennaVid.onclick = function() {
+var absolut = document.getElementById("absolut");
+absolut.onclick = function() {
   modal.style.display = "flex";
-  modal.classList.add("video-modal");
-  modalImg.style.display = "none";
-  modalVideo.classList.add("video");
-  // modalVideo.style.maxWidth = "400px";
-  modalVideo.src = "https://drive.google.com/file/d/1GhFz3qJ80N0znS4Sgaq6Nef-RwR9B47f/preview";
+  modalImg.src = "images/portfolio-main/absolut.jpg";
+  modalImg.style.maxWidth = "225px";
 }
 
+var awinTyi = document.getElementById("awin");
+awinTyi.onclick = function() {
+  modal.style.display = "flex";
+  modalImg.src = "images/portfolio-main/awin.gif";
+}
+
+// DIGITAL PORTFOLIO
 var hunter = document.getElementById("hunter");
 hunter.onclick = function() {
   modal.style.display = "flex";
@@ -207,15 +218,6 @@ boost.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1jlQLpCLPOb3wUxKfdZH2TFsa7CGsClN_/preview";
 }
 
-var motive = document.getElementById("motive");
-motive.onclick = function() {
-  modal.style.display = "flex";
-  modal.classList.add("video-modal");
-  modalImg.style.display = "none";
-  modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1BOlaKJcf4suouxp0FFlfL86lzKXI0Gx0/preview";
-}
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-btn")[0];
 // When the user clicks on <span> (x), close the modal
@@ -223,13 +225,10 @@ span.onclick = function() {
   modal.style.display = "none";
   modalImg.style.display = "block";
   modalVideo.classList.remove("video");
-  modalVideo.src = "";
+  modalVideo.src = ""; //Stopping music from playing when closed
   // Reseting  to defualt values due to resetting above based on image / video type
   modalImg.style.maxWidth = "450px";
   modalVideo.style.maxWidth = "70%";
-  // Unloads video on modal close, otherwise sounds continues playing
-  // $('#video01').get(0).pause();
-  // $('#video01').get(0).unload();
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -241,7 +240,6 @@ window.onclick = function(event) {
 }
 
 //////////////////// END OF MODAL CODE///////////////////
-
 
 // If window is less than 600px, hide hamburger, show when scrolled to Why Me section
 if($(window).width() <= 600){
