@@ -5,7 +5,7 @@
 // $('body').append('<div id="loader"><img class="rotate" src="images/jf-logo.png" /></div>'); (APPEND CAUSES INITIAL SHOWING OF WEBPAGE, THEN SHOWS LOADER)
 
 $(window).on('load', function(){
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+  setTimeout(removeLoader, 1000); //wait for page load PLUS X seconds.
 });
 function removeLoader(){
     $( "#loader" ).fadeOut(500, function() {
@@ -105,8 +105,8 @@ var modalImg = document.getElementById("img01");
 // Getting the video
 var modalVideo = document.getElementById("video01");
 
-var btn1 = document.getElementById("lifelab-button");
-btn1.onclick = function() {
+var lifelabAds = document.getElementById("lifelab-button");
+lifelabAds.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/lifelab.jpg";
 }
@@ -114,7 +114,8 @@ btn1.onclick = function() {
 var btn2 = document.getElementById("tmi-button");
 btn2.onclick = function() {
   modal.style.display = "flex";
-  modalImg.src = "images/portfolio-main/tmi-kit.jpg";
+  modalImg.src = "images/portfolio-main/tmi-sales.jpg";
+  modalImg.style.maxWidth = "800px";
 }
 
 var btn3 = document.getElementById("avicenna");
@@ -122,12 +123,14 @@ btn3.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/avicenna.jpg";
   modalImg.style.maxWidth = "350px";
+  modalImg.style.width = "90%"
 }
 
 var btn4 = document.getElementById("hs-kits");
 btn4.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/hs-kits.jpg";
+  modalImg.style.maxWidth = "600px";
 }
 
 var btn5 = document.getElementById("altitude");
@@ -210,7 +213,7 @@ btn13.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1FhyVQKJvtWLuz6z2mNNkQkFiPCnVSbDE/preview";
+  modalVideo.src = "https://drive.google.com/file/d/1BOlaKJcf4suouxp0FFlfL86lzKXI0Gx0/preview";
 }
 
 // Get the <span> element that closes the modal
