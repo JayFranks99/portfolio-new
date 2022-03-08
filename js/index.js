@@ -100,9 +100,9 @@ $(document).ready(function(){
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("imgModal");
 // Getting the video
-var modalVideo = document.getElementById("video01");
+var modalVideo = document.getElementById("videoModal");
 
 //CODING PORTFOLIO
 var motive = document.getElementById("motive");
