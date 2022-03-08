@@ -111,49 +111,49 @@ lifelabAds.onclick = function() {
   modalImg.src = "images/portfolio-main/lifelab.jpg";
 }
 
-var btn2 = document.getElementById("tmi-button");
-btn2.onclick = function() {
+var tmiSales = document.getElementById("tmi-button");
+tmiSales.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/tmi-sales.jpg";
   modalImg.style.maxWidth = "800px";
 }
 
-var btn3 = document.getElementById("avicenna");
-btn3.onclick = function() {
+var avicennaPoster = document.getElementById("avicenna");
+avicennaPoster.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/avicenna.jpg";
   modalImg.style.maxWidth = "350px";
   modalImg.style.width = "90%"
 }
 
-var btn4 = document.getElementById("hs-kits");
-btn4.onclick = function() {
+var hsKits = document.getElementById("hs-kits");
+hsKits.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/hs-kits.jpg";
   modalImg.style.maxWidth = "600px";
 }
 
-var btn5 = document.getElementById("altitude");
-btn5.onclick = function() {
+var altitude = document.getElementById("altitude");
+altitude.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/altitude.png";
 }
 
-var btn6 = document.getElementById("awin");
-btn6.onclick = function() {
+var awinTyi = document.getElementById("awin");
+awinTyi.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/awin.gif";
 }
 
-var btn7 = document.getElementById("absolut");
-btn7.onclick = function() {
+var absolut = document.getElementById("absolut");
+absolut.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/absolut.jpg";
   modalImg.style.maxWidth = "225px";
 }
 
-var btn8 = document.getElementById("lcfc");
-btn8.onclick = function() {
+var lcfc = document.getElementById("lcfc");
+lcfc.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
@@ -161,8 +161,8 @@ btn8.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1UPNqAfNTzRtpq8L02L20Mtq43AxUurfU/preview";
 }
 
-var btn8 = document.getElementById("avicenna-video");
-btn8.onclick = function() {
+var avicennaVid = document.getElementById("avicenna-video");
+avicennaVid.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
@@ -171,8 +171,8 @@ btn8.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1GhFz3qJ80N0znS4Sgaq6Nef-RwR9B47f/preview";
 }
 
-var btn9 = document.getElementById("hunter");
-btn9.onclick = function() {
+var hunter = document.getElementById("hunter");
+hunter.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
@@ -180,8 +180,8 @@ btn9.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1HY79NL3s3n1Xq8rNAOqsvQHg-MDTXxmS/preview";
 }
 
-var btn10 = document.getElementById("sonar");
-btn10.onclick = function() {
+var sonar = document.getElementById("sonar");
+sonar.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
@@ -189,8 +189,8 @@ btn10.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1vavev-heJP8kQCfoNb_fcKZ2EY3-ZSrL/preview";
 }
 
-var btn11 = document.getElementById("doctor");
-btn11.onclick = function() {
+var doctor = document.getElementById("doctor");
+doctor.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
@@ -198,8 +198,8 @@ btn11.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1UnBX-8b8Q2FFwWYzu9OUmS9vVZ5TanME/preview";
 }
 
-var btn12 = document.getElementById("boost");
-btn12.onclick = function() {
+var boost = document.getElementById("boost");
+boost.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
@@ -207,8 +207,8 @@ btn12.onclick = function() {
   modalVideo.src = "https://drive.google.com/file/d/1jlQLpCLPOb3wUxKfdZH2TFsa7CGsClN_/preview";
 }
 
-var btn13 = document.getElementById("motive");
-btn13.onclick = function() {
+var motive = document.getElementById("motive");
+motive.onclick = function() {
   modal.style.display = "flex";
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
