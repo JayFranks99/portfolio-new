@@ -1,6 +1,6 @@
 /* Bootstrap class */
 .navbar-fixed-top {
-    position: absolute;
+  position: absolute;
 }
 
 #desktop-nav {
@@ -14,7 +14,7 @@
 
 #desktop-nav span {
   font-size: 40px;
-  cursor:pointer;
+  cursor: pointer;
   color: var(--primary);
   z-index: 2;
 }
@@ -96,7 +96,7 @@
   font-weight: bold;
   transition: 0.3s;
   box-shadow: 0px 4px 12px rgb(0 0 0);
-  -webkit-box-shadow:  0px 4px 12px rgb(0 0 0);
+  -webkit-box-shadow: 0px 4px 12px rgb(0 0 0);
 }
 
 #hamburger {
@@ -106,6 +106,7 @@
   width: 55px;
   height: 55px;
   /* box-shadow: 0px 2px 9px 2px rgb(207 207 207);
+
   -webkit-box-shadow:  0px 2px 9px 2px rgb(207 207 207); */
   box-shadow: var(--shadow);
   -webkit-box-shadow: var(--webkit-shadow);
@@ -165,9 +166,11 @@ a.closebtn:hover, .close-btn:hover {
   font-size: 1rem;
 }
 
-.tyi-info p:first-of-type {
+.tyi-info h6 {
   font-family: 'Archivo Black';
   font-size: 1.25rem;
+  color: white;
+  margin-bottom: 5px;
 }
 
 .contact-info {
@@ -232,7 +235,6 @@ a.closebtn:hover, .close-btn:hover {
     font-size: 2rem;
   }
 }
-
 
 /* Iphone 5 / SE */
 @media (max-width: 321px) {

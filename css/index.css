@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   height: 100%;
   /* important for vertical alignment to work*/
   width: 100%;
@@ -111,11 +111,17 @@ button:hover {
   }
 
   .j-btn {
+    padding: 11px 30px;
+    font-size: 0.9rem;
+  }
+
+  .item button {
     padding: 9px 24px;
     font-size: 0.8rem;
   }
 
   .portfolio-btns button {
+    padding: 9px 24px;
     font-size: 0.7rem;
   }
 
@@ -156,7 +162,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #FCFCFC; */
+  /* background-color: #f9f9f9; */
   position: relative;
   padding: 100px 0 200px;
 }
@@ -243,7 +249,7 @@ button:hover {
 
 #about-section {
   position: relative;
-  background: #fcfcfc;
+  background: #f9f9f9;
   z-index: 0;
 }
 
@@ -302,7 +308,7 @@ button:hover {
 
 #why-section {
   position: relative;
-  background: #fcfcfc;
+  background: #f9f9f9;
 }
 
 #why-section .section-heading.mobile {
@@ -348,7 +354,7 @@ button:hover {
 #contact-section {
   position: relative;
   text-align: center;
-  background: #fcfcfc;
+  background: #f9f9f9;
 }
 
 #contact-section .flex-container {
@@ -775,5 +781,5 @@ button:hover {
   .why p {
     font-size: 0.8rem;
     width: 100%;
-}
+  }
 }

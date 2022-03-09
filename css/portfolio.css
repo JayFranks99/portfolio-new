@@ -3,19 +3,6 @@
   cursor: grab;
 }
 
-/* .no-js .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
-/* .slider > div:not(:first-child) {
-    display: none;
-}
-.slider > div:first-child {
-    padding: 0 20px;
-} */
-
 .portfolio div {
   text-align: center;
   /* width: 300px; */
@@ -73,11 +60,6 @@
   /* transition: all 0.5s; */
 }
 
-/* .item:hover {
-  box-shadow: 0px 0px 15px rgb(181 181 181);
-  -webkit-box-shadow: 0px 0px 15px rgb(181 181 181);
-} */
-
 #portfolio-section .item img {
   transition: all 0.2s;
 }
@@ -105,7 +87,6 @@
     padding: 22.5% 10% 15%;
   }
 }
-
 
 @media (max-width: 800px) {
   .heading {
@@ -136,11 +117,11 @@
     width: 85%;
     margin: 0 auto 20px;
   }
+
   .heading span {
     display: none;
   }
 }
-
 
 @media (max-width: 321px) {
   .portfolio-btns button {
@@ -148,7 +129,6 @@
     font-size: 0.65rem;
   }
 }
-
 
 /* -------Skills Section------*/
 #skills {
@@ -185,5 +165,11 @@
 
   #skills h2 {
     width: 90%;
+  }
+}
+
+@media(max-width: 321px) {
+  .item {
+    width: 75%;
   }
 }

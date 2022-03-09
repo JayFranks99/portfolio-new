@@ -6,6 +6,9 @@ $(window).on("load", function () {
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
+      touchThreshold: 50,
+      // swipeToSlide: true,
+      // swipe: true,
       centerMode: false,
       prevArrow:"<button type='button' class='jay-prev j-btn2'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
       nextArrow:"<button type='button' class='jay-next j-btn'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
@@ -49,8 +52,8 @@ $(window).on("load", function () {
         {
           breakpoint: 321,
           settings: {
-            centerMode: true,
-            centerPadding: '30px',
+            centerMode: false,
+            slidesToScroll: 1,
             slidesToShow: 1
           }
         },
