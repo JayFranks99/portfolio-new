@@ -233,7 +233,11 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    modalImg.style.display = "block";
+    modalVideo.classList.remove("video");
     modalVideo.src = "";
+    modalImg.style.maxWidth = "450px";
+    modalVideo.style.maxWidth = "70%";
   }
 }
 
