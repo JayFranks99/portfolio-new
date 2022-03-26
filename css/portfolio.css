@@ -3,6 +3,11 @@
   cursor: grab;
 }
 
+/* Added as there isn't a slide on desktop */
+.digital .portfolio {
+  cursor: auto;
+}
+
 .portfolio div {
   text-align: center;
   /* width: 300px; */

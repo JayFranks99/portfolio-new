@@ -153,6 +153,7 @@ a.closebtn:hover, .close-btn:hover {
 
 .tyi-info p {
   color: var(--white);
+  width: 100%;
 }
 
 .tyi-info img {
@@ -161,9 +162,9 @@ a.closebtn:hover, .close-btn:hover {
   height: 60px;
 }
 
-.tyi-info p {
+.tyi-info p{
   margin: 2px 0;
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .tyi-info h6 {
@@ -180,6 +181,12 @@ a.closebtn:hover, .close-btn:hover {
   width: 350px;
   margin: 5px auto 0;
 }
+
+/* .overlay a[href^=tel] {
+   font-size: unset !important;
+   font-weight: unset !important;
+   font-family: 'Archivo', sans-serif !important;
+} */
 
 .contact-info img {
   box-shadow: 0px 5px 7px rgb(0 0 0 / 10%);

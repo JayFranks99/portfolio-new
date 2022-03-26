@@ -6,6 +6,8 @@
   <title>Jay Franks Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Safari fix for transofrming phone number text into a tags - for overlay menu -->
+  <meta name="format-detection" content="telephone=no">
 
   <!-- FAVICON -->
   <link rel="icon" href="favicon.ico">
@@ -46,7 +48,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/index.css" />
-  
+
 </head>
 
 <!-- SCROLL SPY SECTION SYSTEM -->
@@ -92,8 +94,8 @@
         <hr class="jay-hr" />
       </div>
       <div class="tyi-info">
-        <p>Jay Franks</p>
-        <p>07548675520 | Jay.franks@icloud.com </p>
+        <h6>Jay Franks</h6>
+        <p>07548675520 | Jay.franks@icloud.com</p>
         <div class="contact-info">
           <a href="tel:07548675520"><img src="images/phone.svg" /></a>
           <a href="mailto:jay.franks@icloud.com"><img src="images/email-icon.svg" /></a>
@@ -141,13 +143,16 @@
 
   </div>
 
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fcC3tDAKYd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
   <!-- IMAGE & VIDEO MODAL FOR PORTFOLIO SECTION - OUTSITE OF SECTION DUE TO SLICK -->
   <div id="myModal">
     <span class="close-btn">&times;</span>
     <!-- Image modal -->
     <img id="imgModal" alt="modal-image">
     <!-- Video Modal - using Google Drive src in JS -->
-    <iframe id="videoModal" width="640" height="480" allow="autoplay" allowfullscreen="allowfullscreen"></iframe>
+    <!-- <iframe id="videoModal" width="640" height="480" allow="autoplay" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe> -->
+    <iframe id="videoModal" width="640" height="480" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <!-- ABOUT ME SECTION-->
@@ -235,7 +240,7 @@
                 </div>
                 <div>
                   <p>View Website</p>
-                  <img src="card-flip/btn.svg" />
+                  <a href="https://motive.jayfranks.co.uk" target="_blank"><img src="card-flip/btn.svg" /></a>
                 </div>
                 <div>
                   <p>View Blog</p>
@@ -272,11 +277,19 @@
           </div>
         </div>
         <div>
-          <img src="images/portfolio/gemini.png" />
+          <a href="https://jayfranks.co.uk/gemini/" target="_blank"><img src="images/portfolio/gemini.svg" /></a>
           <div class="item">
             <h2>Gemini</h2>
             <p>Website developed for a conservatory business in Leicester.</p>
-            <button class="j-btn">View</button>
+            <a href="https://jayfranks.co.uk/gemini/" target="_blank"><button class="j-btn">View</button></a>
+          </div>
+        </div>
+        <div>
+          <img src="images/portfolio/drum.svg" />
+          <div class="item">
+            <h2>Drum Kit</h2>
+            <p>A simple JS website developed to allow you to play the drums!</p>
+            <a href="https://drums.jayfranks.co.uk" target="_blank"><button class="j-btn">View</button></a>
           </div>
         </div>
         <div>
@@ -285,14 +298,6 @@
             <h2>Russia 2018</h2>
             <p>PHP website for football fans to view the squads for the 2018 World Cup.</p>
             <a href="pdf/russia.pdf" target="_blank"><button class="j-btn">View</button></a>
-          </div>
-        </div>
-        <div>
-          <img src="images/portfolio/drum.svg" />
-          <div class="item">
-            <h2>Drum Kit</h2>
-            <p>A simple JS website developed to allow you to play the drums!</p>
-            <button class="j-btn">View</button>
           </div>
         </div>
       </div>
@@ -345,7 +350,7 @@
           </div>
         </div>
         <div>
-          <img src="images/portfolio/healthy-stuff.png" />
+          <img src="images/portfolio/healthy-stuff.svg" />
           <div class="item">
             <h2>Healthy Stuff</h2>
             <p>Kit graphics produced to be used across Healthy Stuff websites.</p>
@@ -355,7 +360,7 @@
 
         <!-- SECOND SLIDE -->
         <div>
-          <img src="images/portfolio/altitude.png" />
+          <img src="images/portfolio/altitude.svg" />
           <div class="item">
             <h2>Altitude</h2>
             <p>Logo designed for my Altitude ski festival taking place in Japan.</p>

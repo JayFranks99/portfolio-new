@@ -35,7 +35,6 @@ $(document).ready(function() {
   });
 });
 
-
 //-----Portfolio button toggle-----//
 
 $(document).ready(function(){
@@ -111,7 +110,7 @@ motive.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1BOlaKJcf4suouxp0FFlfL86lzKXI0Gx0/preview";
+  modalVideo.src = "https://www.youtube.com/embed/oRj7Dy6WQss";
 }
 
 //DESIGN PORTFOLIO
@@ -120,7 +119,6 @@ avicennaPoster.onclick = function() {
   modal.style.display = "flex";
   modalImg.src = "images/portfolio-main/avicenna.jpg";
   modalImg.style.maxWidth = "350px";
-  // modalImg.style.width = "80%"
 }
 
 var avicennaVid = document.getElementById("avicenna-video");
@@ -129,8 +127,7 @@ avicennaVid.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  // modalVideo.style.maxWidth = "400px";
-  modalVideo.src = "https://drive.google.com/file/d/1GhFz3qJ80N0znS4Sgaq6Nef-RwR9B47f/preview";
+  modalVideo.src = "https://www.youtube.com/embed/i4UVEiPaa28";
 }
 
 var lifelabAds = document.getElementById("lifelab-button");
@@ -156,7 +153,7 @@ hsKits.onclick = function() {
 var altitude = document.getElementById("altitude");
 altitude.onclick = function() {
   modal.style.display = "flex";
-  modalImg.src = "images/portfolio-main/altitude.png";
+  modalImg.src = "images/portfolio/altitude.svg";
   // modalImg.style.width = "80%";
 }
 
@@ -166,15 +163,14 @@ lcfc.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1UPNqAfNTzRtpq8L02L20Mtq43AxUurfU/preview";
+  modalVideo.src = "https://www.youtube.com/embed/pg5yNVWRX24";
 }
 
 var absolut = document.getElementById("absolut");
 absolut.onclick = function() {
   modal.style.display = "flex";
-  modalImg.src = "images/portfolio-main/absolut.jpg";
+  modalImg.src = "images/portfolio-main/absolut.svg";
   modalImg.style.maxWidth = "250px";
-  modalImg.style.width = "55%";
 }
 
 var awinTyi = document.getElementById("awin");
@@ -190,7 +186,7 @@ hunter.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1HY79NL3s3n1Xq8rNAOqsvQHg-MDTXxmS/preview";
+  modalVideo.src = "https://www.youtube.com/embed/fcC3tDAKYd8";
 }
 
 var sonar = document.getElementById("sonar");
@@ -199,7 +195,7 @@ sonar.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1vavev-heJP8kQCfoNb_fcKZ2EY3-ZSrL/preview";
+  modalVideo.src = "https://www.youtube.com/embed/DPGW3aN-9hE";
 }
 
 var doctor = document.getElementById("doctor");
@@ -208,7 +204,7 @@ doctor.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1UnBX-8b8Q2FFwWYzu9OUmS9vVZ5TanME/preview";
+  modalVideo.src = "https://www.youtube.com/embed/hHDM5MB40Qo";
 }
 
 var boost = document.getElementById("boost");
@@ -217,7 +213,7 @@ boost.onclick = function() {
   modal.classList.add("video-modal");
   modalImg.style.display = "none";
   modalVideo.classList.add("video");
-  modalVideo.src = "https://drive.google.com/file/d/1jlQLpCLPOb3wUxKfdZH2TFsa7CGsClN_/preview";
+  modalVideo.src = "https://www.youtube.com/embed/eA9PlVsHj3c";
 }
 
 // Get the <span> element that closes the modal
@@ -259,6 +255,16 @@ if($(window).width() <= 600){
       hamburger.classList.remove("nav-active");
     }
   });
+
+  $(document).ready(function() {
+    $("#close-nav-btn").click(function(){
+      $('body').css('overflow', 'auto');
+    });
+    $("#hamburger").click(function(){
+      $('body').css('overflow', 'hidden');
+    });
+  });
+
 }
 
 // Smooth scrolling fix for mobile / browsers that don't support
