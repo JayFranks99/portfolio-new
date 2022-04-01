@@ -1,7 +1,6 @@
 'use strict';
 
 //-----Loader function-----//
-
 // $('body').append('<div id="loader"><img class="rotate" src="images/jf-logo.png" /></div>'); (APPEND CAUSES INITIAL SHOWING OF WEBPAGE, THEN SHOWS LOADER)
 $(window).on('load', function(){
   setTimeout(removeLoader, 1000); //wait for page load PLUS X seconds.
