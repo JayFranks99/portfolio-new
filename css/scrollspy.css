@@ -27,10 +27,10 @@ body {
   height: 0.5625rem; */
   /* border-radius: 50%; */
   background-color: #aeb4c2;
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
   margin-bottom: 0.5rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin: 7.5px 0;
 }
 
@@ -39,11 +39,12 @@ body {
   height: 0.8rem;
   /* width: 0.6875rem;
   height: 0.6875rem; */
-  background-color: #2F2F2F;
-  margin-left: -1px;
+  background-color: #2f2f2f;
+  /* margin-left: -1px; */
   opacity: 1;
 }
 
-#scrolldots>li>a:focus, #scrolldots>li>a:hover {
+#scrolldots > li > a:focus,
+#scrolldots > li > a:hover {
   background-color: unset;
 }

@@ -3,7 +3,7 @@ p {
   line-height: 1.75;
   margin: 0;
   padding: 0;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: var(--primary);
   font-size: 1rem;
 }
@@ -13,19 +13,25 @@ p {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
   color: var(--primary);
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --primary: #2F2F2F;
+  --primary: #2f2f2f;
   --grey: #595959;
   --light_grey: #828282;
   --white: #fff;
-  --blue: #008ECC;
+  --blue: #008ecc;
   --shadow: 0px 8px 15px rgb(0 0 0 / 10%);
   --webkit-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
 }
@@ -40,21 +46,21 @@ html {
 }
 
 body {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 
 button:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .j-btn {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   background: var(--primary);
   border: solid 3px var(--primary);
   color: var(--white);
   border-radius: 1.5em;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
   transition: all 200ms ease-in-out;
   padding: 9px 27px;
   font-size: 0.8rem;
@@ -132,7 +138,6 @@ button:hover {
 
 /* Style defualts iphone 5/se */
 @media (max-width: 321px) {
-
   /* Making everything full width, one column due to small screen size */
   .flex-container {
     flex-direction: column;
@@ -145,7 +150,8 @@ button:hover {
   padding: 125px 0 150px;
 }
 
-#portfolio-section, #skills-section {
+#portfolio-section,
+#skills-section {
   padding: 75px 0;
 }
 
@@ -185,7 +191,7 @@ button:hover {
   /* font-size: 1rem; */
   color: var(--grey);
   margin: 7.5px 0 20px;
-  width: 57.5%;
+  width: 65%;
 }
 
 .hero-text h1 {
@@ -202,8 +208,8 @@ button:hover {
 
 .hero-text h2 {
   font-size: 1.4rem;
-  font-family: 'Archivo', sans-serif;
-  color: var(--light_grey)
+  font-family: "Archivo", sans-serif;
+  color: var(--light_grey);
 }
 
 .hero-image {
@@ -239,7 +245,7 @@ button:hover {
 /* -------About Me Section------*/
 .border-div {
   width: 90%;
-  border: solid 15px #008ECC;
+  border: solid 15px #008ecc;
   height: 98%;
   position: absolute;
   z-index: -1;
@@ -322,7 +328,7 @@ button:hover {
 
 .why {
   display: flex;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .why:first-of-type {
@@ -340,7 +346,7 @@ button:hover {
 
 .why .number p:first-of-type {
   font-size: 2.5rem;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   margin: 0;
 }
 
@@ -362,14 +368,14 @@ button:hover {
 }
 
 #contact-section .flex-container p:nth-child(2) {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-size: 1.5rem !important;
 }
 
 #contact-section img {
   width: 60px;
   height: 60px;
-  transition: all .2s;
+  transition: all 0.2s;
   box-shadow: var(--shadow);
   -webkit-box-shadow: var(--webkit-shadow);
   border-radius: 50%;
@@ -377,7 +383,7 @@ button:hover {
 
 #contact-section img:hover {
   cursor: pointer;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #contact-section .flex-container div {
@@ -390,17 +396,21 @@ button:hover {
 
 /* ---------------DESKTOP-----------------*/
 @media (min-width: 1500px) {
-
   /* Space between sections */
   .hero-div {
     padding: 50px 0 125px;
+  }
+
+  .hero-text p {
+    width: 64%;
   }
 
   #about-section {
     padding: 150px 0 175px;
   }
 
-  #portfolio-section, #skills-section {
+  #portfolio-section,
+  #skills-section {
     padding: 100px 0;
   }
 
@@ -447,17 +457,18 @@ button:hover {
 
 /* ---------------TABLET------------------*/
 @media (max-width: 1100px) {
-
   /* Space between sections */
   #hero-section {
     padding: 0 0 100px;
   }
 
-  #about-section, #why-section {
+  #about-section,
+  #why-section {
     padding: 175px 0;
   }
 
-  #portfolio-section, #skills-section {
+  #portfolio-section,
+  #skills-section {
     padding: 125px 0;
   }
 
@@ -504,7 +515,6 @@ button:hover {
 }
 
 @media (max-width: 1000px) {
-
   /* -------Contact Me Section------*/
   .flex-container {
     flex-direction: column;
@@ -544,7 +554,6 @@ button:hover {
 }
 
 @media (max-width: 651px) {
-
   /* Show Front-end Web Developer */
   .hero-text span {
     display: inline;
@@ -553,17 +562,19 @@ button:hover {
 
 /* ---------------MOBILE------------------*/
 @media (max-width: 600px) {
-
   /* Space between sections */
   #hero-section {
     padding: 0 0 100px;
   }
 
-  #about-section, #why-section {
+  #about-section,
+  #why-section {
     padding: 100px 0;
   }
 
-  #portfolio-section, #skills-section, #contact-section {
+  #portfolio-section,
+  #skills-section,
+  #contact-section {
     padding: 75px 0;
   }
 
@@ -591,8 +602,8 @@ button:hover {
 
   .hero-text h2 {
     font-size: 1.25rem;
-    font-family: 'Archivo', sans-serif;
-    color: var(--light_grey)
+    font-family: "Archivo", sans-serif;
+    color: var(--light_grey);
   }
 
   .hero-text p {
@@ -621,7 +632,7 @@ button:hover {
   /* -------About Me Section------*/
   .border-div {
     width: 100%;
-    border: solid 11px #008ECC;
+    border: solid 11px #008ecc;
     height: 98%;
     position: absolute;
     z-index: -1;
@@ -715,7 +726,6 @@ button:hover {
 
 /* Iphone 5/SE */
 @media (max-width: 321px) {
-
   /* -------Default Styling------*/
   p {
     font-size: 0.9rem;

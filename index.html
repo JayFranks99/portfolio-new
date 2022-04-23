@@ -54,7 +54,7 @@
 <!-- SCROLL SPY SECTION SYSTEM -->
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
 
-  <!--Loader hidden by default if JS is disabled, script displays it if enabled - index.js removes after x seconds-->
+  <!-- Loader hidden by default if JS is disabled, script displays it if enabled - index.js removes after x seconds-->
   <div id="loader" style="display: none;"><img class="rotate" src="images/jf-logo.svg" /></div>
   <script>
     $( "#loader" ).css('display', 'flex');
@@ -127,7 +127,7 @@
       <div class="hero-text">
         <h2>Hello, I'm Jay Franks</h2>
         <h1>Front-end <span>Web</span> Developer</h1>
-        <p>An ambitious individual with valuable experience within e-commerce web development.</p>
+        <p>An ambitious and conscientious individual with valuable experience within e-commerce web development.</p>
         <div class="coding-lang">
           <img loading="lazy" src="images/html.svg" />
           <img loading="lazy" src="images/css.svg" />
@@ -145,18 +145,6 @@
 
     <a href="#about-section"><img loading="lazy" class="down-arrow" src="images/down-arrow.svg" /></a>
 
-  </div>
-
-  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fcC3tDAKYd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-  <!-- IMAGE & VIDEO MODAL FOR PORTFOLIO SECTION - OUTSITE OF SECTION DUE TO SLICK -->
-  <div id="myModal">
-    <span class="close-btn">&times;</span>
-    <!-- Image modal -->
-    <img id="imgModal" alt="modal-image">
-    <!-- Video Modal - using Google Drive src in JS -->
-    <!-- <iframe id="videoModal" width="640" height="480" allow="autoplay" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe> -->
-    <iframe id="videoModal" width="640" height="480" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <!-- ABOUT ME SECTION-->
@@ -184,12 +172,12 @@
       <div class="text-right">
         <div class="section-heading">
           <p>About Me</p>
-          <h2>Who Is Jay?</h2>
+          <h2>Who am I?</h2>
         </div>
 
         <div>
           <p>I graduated from the University of Leeds in 2020 with a high 2:1 in Digital Media.</p>
-          <p>Have gone onto gaining valuable work experience with Healthy Stuff and Aspex through working in web development. </p>
+          <p>I have since gained valuable work experience working in web development for Healthy Stuff and Aspex. </p>
         </div>
 
         <a href="pdf/jay-franks-cv.pdf" target="_blank"><button class="j-btn"><i class="fas fa-angle-double-down"></i>Download CV</button></a>
@@ -198,12 +186,21 @@
     </div>
   </div>
 
-  <!-- PORTFOLIO SECTION-->
-  <div data-aos="fade-up" id="portfolio-section">
+  <!-- IMAGE & VIDEO MODAL FOR PORTFOLIO SECTION - OUTSITE OF SECTION DUE TO SLICK -->
+  <div id="myModal">
+    <span class="close-btn">&times;</span>
+    <!-- Image modal -->
+    <img id="imgModal" alt="modal-image">
+    <!-- Video Modal - using Google Drive src in JS -->
+    <!-- <iframe id="videoModal" width="640" height="480" allow="autoplay" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe> -->
+    <iframe id="videoModal" width="640" height="480" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
+   <!-- PORTFOLIO SECTION-->
+   <div data-aos="fade-up" id="portfolio-section">
     <div class="heading j-container">
       <div>
-        <h2><span>My</span> Portfolio</h2>
+        <h2><span>My</span>Portfolio</h2>
       </div>
       <div class="portfolio-btns">
         <button id="coding-btn" class="j-btn">CODING</button>
@@ -216,12 +213,56 @@
     <div class="coding main">
       <div class="slider portfolio">
         <!-- FIRST SLIDE -->
-        <div>
-          <a href="https://www.allergytest.co/" target="_blank"><img loading="lazy" src="images/portfolio/allergy-test.svg" /></a>
+        <!-- <div>
+          <a href="https://www.allergytest.co/" target="_blank"
+            ><img loading="lazy" src="images/portfolio/allergy-test.svg"
+          /></a>
           <div class="item">
             <h2>Allergy Test</h2>
-            <p>E-commerce allergy & intolerance website built from scratch.</p>
-            <a href="https://www.allergytest.co/" target="_blank"><button class="j-btn">View</button></a>
+            <p>
+              Redesigned and re-built an e-commerce website from scratch.
+            </p>
+            <a href="https://www.allergytest.co/" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
+          </div>
+        </div> -->
+        <div class="card">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <img loading="lazy" src="images/portfolio/allergy-test.svg" />
+              <div class="item">
+                <h2>Allergy Test</h2>
+                <p>
+                  Redesigned and re-built an e-commerce website from scratch.
+                </p>
+                <button class="j-btn">View</button>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <img loading="lazy" src="images/portfolio/allergy-test.svg" />
+              <div class="item">
+                <h2>Allergy Test</h2>
+                <div>
+                  <p>View Old Site</p>
+                  <a href="pdf/old-site.pdf" target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
+                </div>
+                <div>
+                  <p>Rebuild Proposal</p>
+                  <a href="pdf/rebuild-proposal.pdf" target="_blank"
+                  ><img loading="lazy" src="card-flip/btn.svg"
+                /></a>
+                </div>
+                <div>
+                  <p>View Full Rebuild</p>
+                  <a href="https://www.allergytest.co/" target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -230,7 +271,9 @@
               <img loading="lazy" src="images/portfolio/motive.svg" />
               <div class="item">
                 <h2>Motive</h2>
-                <p>University of Leeds app for first-year students to make friends.</p>
+                <p>
+                  Conceptualised and developed an app for students to make friends.
+                </p>
                 <button class="j-btn">View</button>
               </div>
             </div>
@@ -244,14 +287,32 @@
                 </div>
                 <div>
                   <p>View Website</p>
-                  <a href="https://motive.jayfranks.co.uk" target="_blank"><img loading="lazy" src="card-flip/btn.svg" /></a>
+                  <a href="https://motive.jayfranks.co.uk" target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
                 </div>
                 <div>
-                  <p>View Blog</p>
-                  <a href="https://jayfranksdigitalmediaproject.blogspot.com/" target="_blank"><img loading="lazy" src="card-flip/btn.svg" /></a>
+                  <p>View Project Blog</p>
+                  <a
+                    href="https://jayfranksdigitalmediaproject.blogspot.com/"
+                    target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div>
+          <a href="https://lifelabtesting.com/" target="_blank"
+            ><img loading="lazy" src="images/portfolio/lifelab.svg"
+          /></a>
+          <div class="item">
+            <h2>Lifelab</h2>
+            <p>Improved the design and build of the Lifelab e-commerce website.</p>
+            <a href="https://lifelabtesting.com/" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
           </div>
         </div>
         <div class="card">
@@ -260,7 +321,9 @@
               <img loading="lazy" src="images/portfolio/tma.svg" />
               <div class="item">
                 <h2>TMA</h2>
-                <p>Test My Allergy website being rebuilt for Healthy Stuff.</p>
+                <p>
+                  Carrying out a redesign and re-build of the Test My Allergy website.
+                </p>
                 <button class="j-btn">View</button>
               </div>
             </div>
@@ -270,68 +333,75 @@
                 <h2>TMA</h2>
                 <div>
                   <p>View Design</p>
-                  <a href="pdf/tma-design.pdf" target="_blank"><img loading="lazy" src="card-flip/btn.svg" /></a>
+                  <a href="pdf/tma-design.pdf" target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
                 </div>
                 <div>
                   <p>View Rebuild</p>
-                  <a href="https://tma.jayfranks.co.uk" target="_blank"><img loading="lazy" src="card-flip/btn.svg" /></a>
+                  <a href="https://tma.jayfranks.co.uk" target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
                 </div>
                 <div>
                   <p>View Current Site</p>
-                  <a href="https://www.testmyallergy.com" target="_blank"><img loading="lazy" src="card-flip/btn.svg" /></a>
+                  <a href="https://www.testmyallergy.com" target="_blank"
+                    ><img loading="lazy" src="card-flip/btn.svg"
+                  /></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div>
-          <a href="https://www.testmyallergy.com/" target="_blank"><img src="images/portfolio/tma.svg" /></a>
-          <div class="item">
-            <h2>TMA</h2>
-            <p>Designed & developed the Test My Allergy website for Healthy Stuff.</p>
-            <a href="https://www.testmyallergy.com/" target="_blank"><button class="j-btn">View</button></a>
-          </div>
-        </div> -->
-        <div>
-          <a href="https://lifelabtesting.com/" target="_blank"><img loading="lazy" src="images/portfolio/lifelab.svg" /></a>
-          <div class="item">
-            <h2>Lifelab</h2>
-            <p>Various improvements made for the existing Lifelab website.</p>
-            <a href="https://lifelabtesting.com/" target="_blank"><button class="j-btn">View</button></a>
-          </div>
-        </div>
-
         <!-- SECOND SLIDE -->
         <div>
-          <a href="https://aspex-uk.co.uk/" target="_blank"><img loading="lazy" src="images/portfolio/aspex.svg" /></a>
+          <a href="https://aspex-uk.co.uk/" target="_blank"
+            ><img loading="lazy" src="images/portfolio/aspex.svg"
+          /></a>
           <div class="item">
             <h2>Aspex</h2>
-            <p>Website work for an industry leading building materials company.</p>
-            <a href="https://aspex-uk.co.uk/" target="_blank"><button class="j-btn">View</button></a>
+            <p>
+              Improved the website for an industry leading building materials company.
+            </p>
+            <a href="https://aspex-uk.co.uk/" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
           </div>
         </div>
         <div>
-          <a href="https://jayfranks.co.uk/gemini/" target="_blank"><img loading="lazy" src="images/portfolio/gemini.svg" /></a>
+          <a href="https://jayfranks.co.uk/gemini/" target="_blank"
+            ><img loading="lazy" src="images/portfolio/gemini.svg"
+          /></a>
           <div class="item">
             <h2>Gemini</h2>
-            <p>Website developed for a conservatory business in Leicester.</p>
-            <a href="https://jayfranks.co.uk/gemini/" target="_blank"><button class="j-btn">View</button></a>
+            <p>Re-built the website for a local conservatory business.</p>
+            <a href="https://jayfranks.co.uk/gemini/" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
           </div>
         </div>
         <div>
-          <img loading="lazy" src="images/portfolio/drum.svg" />
+          <img loading="lazy" src="images/portfolio/pig2.svg" />
           <div class="item">
-            <h2>Drum Kit</h2>
-            <p>A simple JS website developed to allow you to play the drums!</p>
-            <a href="https://drums.jayfranks.co.uk" target="_blank"><button class="j-btn">View</button></a>
+            <h2>Pig Game</h2>
+            <p>
+              Race to 50 points with a friend! An interactive dice game created using JS.
+            </p>
+            <a href="https://pig-game.jayfranks.co.uk" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
           </div>
         </div>
         <div>
-          <img loading="lazy" src="images/portfolio/dice.png" />
+          <img loading="lazy" src="images/portfolio/higher.svg" />
           <div class="item">
-            <h2>Dice Game</h2>
-            <p>A simple JS website created to help solve small arguments.</p>
-            <a href="https://dice.jayfranks.co.uk" target="_blank"><button class="j-btn">View</button></a>
+            <h2>Higher Lower</h2>
+            <p>
+              A JS game created in homage to the classic higher or lower game.
+            </p>
+            <a href="https://higher-lower.jayfranks.co.uk" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
           </div>
         </div>
         <!-- THIRD SLIDE -->
@@ -340,15 +410,46 @@
           <div class="item">
             <h2>Guess!</h2>
             <p>A simple guess my number game created using JS. Have a go!</p>
-            <a href="https://guess.jayfranks.co.uk" target="_blank"><button class="j-btn">View</button></a>
+            <a href="https://guess.jayfranks.co.uk" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
           </div>
         </div>
         <div>
-          <a href="pdf/russia.pdf" target="_blank"><img loading="lazy" src="images/portfolio/russia.svg" /></a>
+          <img loading="lazy" src="images/portfolio/drum.svg" />
+          <div class="item">
+            <h2>Drum Kit</h2>
+            <p>
+              A JS website developed to allow you to play the drums!
+            </p>
+            <a href="https://drums.jayfranks.co.uk" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
+          </div>
+        </div>
+        <div>
+          <img loading="lazy" src="images/portfolio/dice.png" />
+          <div class="item">
+            <h2>Dice Game</h2>
+            <p>A simple JS website created to help solve small arguments.</p>
+            <a href="https://dice.jayfranks.co.uk" target="_blank"
+              ><button class="j-btn">View</button></a
+            >
+          </div>
+        </div>
+        <div>
+          <a href="pdf/russia.pdf" target="_blank"
+            ><img loading="lazy" src="images/portfolio/russia.svg"
+          /></a>
           <div class="item">
             <h2>Russia 2018</h2>
-            <p>PHP website for football fans to view the squads for the 2018 World Cup.</p>
-            <a href="pdf/russia.pdf" target="_blank"><button class="j-btn">View</button></a>
+            <p>
+              PHP website for football fans to view the squads for the 2018
+              World Cup.
+            </p>
+            <a href="pdf/russia.pdf" target="_blank">
+              <button class="j-btn">View</button>
+            </a>
           </div>
         </div>
         <!-- END OF SLIDES -->
@@ -365,7 +466,7 @@
               <img loading="lazy" src="images/portfolio/avicenna.svg" />
               <div class="item">
                 <h2>Avicenna</h2>
-                <p>Poster designs created for Avicenna stores as well as a social video.</p>
+                <p>Designed a poster and digital ad campaign for Avicenna.</p>
                 <button class="j-btn">View</button>
               </div>
             </div>
@@ -389,7 +490,7 @@
           <img loading="lazy" src="images/portfolio/lifelab.svg" />
           <div class="item">
             <h2>Lifelab Ads</h2>
-            <p>Graphics created for Lifelab’s Facebook Ads hayfever campaign.</p>
+            <p>Created the graphics for Lifelab’s Facebook ad campaign on hayfever.</p>
             <button id="lifelab-button" class="portfolio-btn j-btn">View</button>
           </div>
         </div>
@@ -397,7 +498,7 @@
           <img loading="lazy" src="images/portfolio/tma.svg" />
           <div class="item">
             <h2>TMI</h2>
-            <p>Sales graphics created for Mailchimp mailshot campaigns.</p>
+            <p>Designed the sales graphics for Mailchimp campaigns.</p>
             <button id="tmi-button" class="j-btn">View</button>
           </div>
         </div>
@@ -415,7 +516,7 @@
           <img loading="lazy" src="images/portfolio/altitude.svg" />
           <div class="item">
             <h2>Altitude</h2>
-            <p>Logo designed for my Altitude ski festival taking place in Japan.</p>
+            <p>Created a logo as part of a multi-format campaign for a Skiing Festival. </p>
             <button id="altitude" class="j-btn">View</button>
           </div>
         </div>
@@ -431,7 +532,7 @@
           <img loading="lazy" src="images/portfolio/absolut.svg" />
           <div class="item">
             <h2>Absolut Jazz</h2>
-            <p>Absolut Vodka web banner design created for Jazz music lovers.</p>
+            <p>Designed a web banner for Absolut Vodka targeting Jazz lovers.</p>
             <button id="absolut" class="j-btn">View</button>
           </div>
         </div>
@@ -439,7 +540,7 @@
           <img loading="lazy" src="images/portfolio/allergy-test.svg" />
           <div class="item">
             <h2>Awin TYI</h2>
-            <p>Affiliate marketing gifs to target allergy and intolerance sufferers.</p>
+            <p>Created affiliate marketing gifs to target allergy and intolerance sufferers.</p>
             <button id="awin" class="j-btn">View</button>
           </div>
         </div>
@@ -454,7 +555,7 @@
           <img loading="lazy" src="images/portfolio/hunter.png" />
           <div class="item">
             <h2>The Hunter</h2>
-            <p>Music video created for the song ‘The Hunter’ by Slaves.</p>
+            <p>Produced a Music video for the song ‘The Hunter’ by Slaves.</p>
             <button id="hunter" class="j-btn">View</button>
           </div>
         </div>
@@ -464,7 +565,7 @@
               <img loading="lazy" src="images/portfolio/sonar.svg" />
               <div class="item">
                 <h2>Sonar</h2>
-                <p>Campaign created to help homeless people in Leeds.</p>
+                <p>Digital campaign created to raise awareness of homelessness in Leeds.</p>
                 <button class="j-btn">View</button>
               </div>
             </div>
@@ -570,7 +671,7 @@
               <img loading="lazy" src="images/experience.svg" />
             </div>
             <div class="number">
-              <p>4</p>
+              <p>2</p>
               <p>Years Experience</p>
             </div>
           </div>
@@ -612,7 +713,7 @@
           <div class="item">
             <img loading="lazy" src="images/coding.svg" />
             <h2>Web Development</h2>
-            <p>I have gained over 4 years experience in creating websites.</p>
+            <p>I have gained over 2 years experience in creating websites.</p>
           </div>
         </div>
         <div>
