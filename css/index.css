@@ -621,8 +621,12 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
+  }
+
+  .coding-lang .desktop {
+    display: none;
   }
 
   .coding-lang img {
