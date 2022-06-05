@@ -1,0 +1,123 @@
+body {
+  background-color: red;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: 1s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Bevan', cursive !important;
+  font-size: 4rem;
+  color: white;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Bevan', cursive;
+}
+
+img {
+  width: 170px;
+  height: 170px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.dice {
+  margin: 0 15px;
+  text-align: center;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  font-size: .9rem;
+  padding: 17.5px;
+  border-radius: 1em;
+  color: white;
+  font-family: 'Bevan', cursive;
+  background-color: #9c1915;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+button:active {
+  border: none !important;
+  position: relative;
+  top: 1px;
+  outline: none !important;
+}
+
+button:focus, a:focus {
+  outline: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+footer {
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+  font-family: 'Bevan', cursive;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem
+  }
+
+  button {
+    padding: 15px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 376px) {
+  img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media(max-width: 321px) {
+  img {
+    width: 110px;
+    height: 110px;
+  }
+}

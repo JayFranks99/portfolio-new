@@ -1,0 +1,171 @@
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #3c3c3b;
+    border-width: 5px;
+    width: 10%;
+    margin: 15% auto;
+ }
+
+ .btn-primary {
+   border: none;
+   border: solid 1px transparent;
+ }
+
+ .btn-primary:hover {
+  background-color: white;
+  color: #0095b7;
+  border: solid 1px #0095b7;
+}
+
+
+/*-----------------NAVIGATION BAR-------------------*/
+
+.navbar-container {
+  background-color: #0095b7;
+  padding: 2.5% 10%;
+}
+
+.normal-navbar {
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.nav-link {
+  font-size: 1rem;
+ text-decoration: none;
+ color: white;
+ padding: 20px 30px;
+ padding-right: 0;
+ margin: 0;
+ display: inline-block;
+ position: relative;
+}
+
+.nav-link:hover {
+color: white;
+text-decoration: underline;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.75rem;
+  float: left;
+  font-family: "Orbitron";
+  display: inline-block;
+}
+
+.logo-jf {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger {
+  float: right;
+  display: none;  /* HIDE HAMBURGER UNTIL THE DEVICE HITS A SMALLER SCREEN*/
+  color: white;
+  font-size: 35px !important;
+  line-height: 1.5;
+}
+
+/*---------------FULL SCREEN HAMBURGER NAV--------------------*/
+
+.overlay { /* .myNav (overlay) TARGETED IN JS TO OPEN/CLOSE THE NAV - CHANGING HEIGHT TO 100% TO OPEN NAV, 0% HEIGHT TO CLOSE*/
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.4s; /* Smooth transition to the opening and closing functions*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+.nav-links-overlay {
+  padding: 20px 0 !important;
+  margin: 0%;
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: #0095b7;
+  display: block;
+  position: relative;
+}
+
+.nav-links-overlay:hover{
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-size: 4rem;
+  text-decoration: none !important;
+  color: #0095b7;
+}
+
+
+
+@media (min-width: 1500px) {
+  .logo-jf {
+  width: 50px;
+  height: 50px;
+  }
+
+  .nav-link {
+    padding: 20px 25px;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+@media (max-width: 999px) {
+.navbar-container{
+  padding: 0;
+}
+
+  .hamburger {
+    display: inline-block;
+  }
+  .normal-navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+.logo-jf {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-brand {
+font-size: 1.5rem;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  }
+}
+
+/*-------------END OF NAV CODE-----------------*/

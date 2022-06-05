@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <!-- MODAL INSTRUCTIONS -->
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Read the rules before playing!</h1>
+
+      <p>
+        On a turn, a player rolls the dice repeatedly. The goal is to accumulate
+        as many points as possible, adding up the numbers rolled on the dice.
+      </p>
+
+      <p>
+        However, if a player rolls a 1, the player's turn is over and any points
+        they have accumulated during this turn are forfeited.
+      </p>
+
+      <p>
+        Rolling a 1 doesn't wipe out your entire score from previous turns, just
+        the total earned during that particular roll.
+      </p>
+
+      <p>
+        A player can also choose to 'hold' if they do not want to take a chance
+        of rolling a 1 and losing all of their points from this turn.
+      </p>
+
+      <p>
+        The player chooses to hold, all of the points rolled during that turn
+        are added to their score. When a player reaches a total of 50 or more
+        points, the game ends and that player is the winner.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- END -->
+
+    <main>
+      <div class="btns-div top">
+        <button class="btn btn--new">🔄 New game</button>
+      </div>
+
+      <section class="player player--1 player--active">
+        <h2 class="name" id="name--1">Player 1</h2>
+        <div class="score-div">
+          <!-- <p class="score-label">Current:</p> -->
+          <p class="score" id="score--1">43</p>
+        </div>
+        <div class="current">
+          <p class="current-label">Score:</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img class="dice dice0" src="dice-5.png" alt="Playing dice" />
+
+      <section class="player player--2">
+        <h2 class="name" id="name--2">Player 2</h2>
+        <div class="score-div">
+          <!-- <p class="score-label">Current:</p> -->
+          <p class="score" id="score--2">24</p>
+        </div>
+        <div class="current">
+          <p class="current-label">Score:</p>
+          <p class="current-score" id="current--2">0</p>
+        </div>
+      </section>
+
+      <div class="btns-div bottom">
+        <button class="btn btn--roll">🎲 Roll dice</button>
+        <button class="btn btn--hold">📥 Hold</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

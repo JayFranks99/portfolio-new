@@ -1,0 +1,623 @@
+/* ---------------------HTML ELEMENTS------------------------- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* ---------------------TITLE SECTION------------------------- */
+
+#title {
+  background-color: #0095b7;
+  color: white;
+  padding: 5% 10%;
+}
+
+.title-leftsection {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2.5%;
+  margin: 5% 0;
+  text-align: left;
+}
+
+.title-leftsection2 {
+display: none;
+}
+
+.uol {
+font-size: 3rem;
+}
+
+.download-text {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.title-rightsection {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0;
+}
+
+/* IOS BUTTON */
+
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    margin-top: 5%;
+}
+
+.btn-outline-primary:hover{
+  color: white;
+  background-color: #037b96;
+  border-color: #037b96;
+}
+
+.btn-outline-primary:active {
+  color:  #0095b7;
+	position:relative;
+	top:1px;
+}
+
+/* ANDROID BUTTON*/
+
+.btn-light {
+  color: #0095b7;
+  margin-top: 5%;
+  margin-left: 0;
+  margin-right: 2.5%;
+}
+
+
+.btn-light:hover{
+  color: #037b96;
+}
+
+.btn-light:active {
+  color: #0095b7 !important;
+  position:relative;
+	top:1px;
+}
+
+/* PHONE IMAGE */
+
+.phone-image {
+  width: 55%;
+  margin-bottom: 0;
+  margin-left: 30%;
+  transform: rotate(22.5deg);
+  position: absolute;
+  padding-top: 5%;
+  right: 20%;
+  }
+
+
+/* Other title-section */
+
+/*---------------------------------LANDING------------------------------------*/
+
+.container-motive {
+  display: none;
+	position: relative;
+	height: 80%;
+	width: 80%;
+	margin: 0 auto;
+  height: 450px;
+  width: auto;
+  background-color: #0095b7;
+  color: white;
+  font-weight: bold;
+}
+
+.backg-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+}
+
+.landing-content {
+	position: absolute;
+	width: 80%;
+	margin: 0;
+	top: 40%;
+	left: 50%;
+ 	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+	text-align: center; /*HORIZONTAL CENTERING*/
+	line-height: 1.5;
+	letter-spacing: 2px;
+}
+
+.logo {
+width: 100px;
+height: 100px;
+margin: 0.5% auto;
+}
+
+.intro-heading {
+	margin: 0 auto;
+	font-size: 4rem;
+}
+
+.intro-description {
+	margin: 0 auto;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/* IOS BUTTON */
+
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    margin-top: 2%;
+}
+
+.btn-outline-primary:hover{
+  color: white;
+  background-color: #037b96;
+  border-color: #037b96;
+}
+
+.btn-outline-primary:active {
+  color:  #0095b7;
+	position:relative;
+	top:1px;
+}
+
+/* ANDROID BUTTON*/
+
+.btn-light {
+  color: #0095b7;
+  margin-top: 2%;
+  margin-left: 0;
+  margin-right: 2.5%;
+}
+
+
+.btn-light:hover{
+  color: #037b96;
+}
+
+.btn-light:active {
+  color: #0095b7 !important;
+  position:relative;
+	top:1px;
+}
+
+
+@media (min-width: 1400px) {
+
+  .navbar-container, #title, #features, #testimonials, #cta {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+
+}
+
+  /*---------------------------------MEDIA QUERIES------------------------------------*/
+
+@media (max-width: 999px) {
+  .container-motive {
+    display: block;
+  }
+
+  .title-leftsection {
+    display: none;
+  }
+
+  .title-rightsection {
+    display: none;
+  }
+
+.backg-img {
+	width: 70%;
+}
+
+}
+
+
+/*--------------------------MEDIUM DEVICES------------------------*/
+
+@media (max-width: 768px) {
+
+	.logo {
+	width: 85px;
+	height: 85px;
+	}
+
+	.intro-heading {
+		font-size: 3.5rem;
+	}
+
+	.intro-description {
+		font-size: 1.5rem;
+	}
+
+}
+
+
+/*--------------------------SMALL DEVICES------------------------*/
+
+@media (max-width: 536px) {
+	.logo {
+	width: 70px;
+	height: 70px;
+	}
+
+	.intro-heading {
+		font-size: 3rem;
+	}
+
+	.intro-description {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 465px) {
+
+	.logo {
+	width: 65px;
+	height: 65px;
+	}
+
+	.intro-heading {
+		font-size: 2.5rem;
+	}
+
+	.intro-description {
+		font-size: 1.25rem;
+	}
+
+}
+
+/*--------------------------IPHONE DEVICES------------------------*/
+
+@media (max-width: 394px) {
+
+	.logo {
+	width: 60px;
+	height: 60px;
+	}
+
+	.intro-heading {
+		font-size: 2.25rem;
+	}
+
+	.intro-description {
+		font-size: 1rem;
+	}
+
+}
+
+/*--------------------------IPHONE 5------------------------*/
+
+@media (max-width: 350px) {
+
+	.logo {
+	width: 45px;
+	height: 45px;
+	}
+
+	.intro-heading {
+		font-size: 2rem;
+	}
+
+	.intro-description {
+		font-size: 0.8rem;
+	}
+
+}
+
+
+
+/* ---------------------FEATURES SECTION------------------------- */
+
+#features {
+  background-color: white;
+  color: #0095b7;
+  position: relative;
+  padding: 1.5% 10%;
+  text-align: center !important;
+}
+
+  .row-features {
+    padding: 5% 0;
+  }
+
+  .features-box{
+    padding: 5% 2%;
+  }
+
+  .features-description {
+    color: #a6a6a6;
+  }
+
+  .icons {
+    margin-bottom: 1rem;
+  }
+
+  .icons:hover {
+  color: #037b96;
+  }
+
+/* ---------------------TESTIMONIALS SECTION------------------------- */
+
+#testimonials {
+  background-color: #0095b7;
+  color: white;
+  padding: 2.5% 0;
+}
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonials-text {
+color: white;
+}
+
+.name {
+color: white;
+}
+
+.carousel-item {
+  padding: 5% 10%;
+}
+
+
+/* ---------------------CALL TO ACTION SECTION------------------------- */
+
+#cta {
+  background-color: white;
+  color: #0095b7;
+  padding: 9% 10%;
+}
+
+/* ANDROID BUTTON CTA*/
+.btn-primary {
+  color: white;
+  margin: 1%;
+  background-color: #0095b7;
+ }
+
+/* APPLE BUTTON CTA*/
+.btn-outline-info {
+    color: #0095b7;
+    border-color: #0095b7;
+    margin: 1%;
+}
+
+.cta-heading {
+ margin-bottom: 2.5%;
+ font-size: 2.25rem;
+ margin: 0 auto 2.5%;
+}
+
+
+/* ---------------------FOOTER SECTION------------------------- */
+
+footer {
+  background-color:#0095b7;
+  color:white ;
+  padding: 2.5% 0;
+}
+
+.social-icon {
+  color: white;
+  padding: 0.5%;
+}
+
+.social-icon:hover {
+text-decoration: none;
+}
+.footer-text {
+  margin-top: 1%;
+  font-size:0.7rem;
+}
+
+/* ---------------------MEDIA QUERIES------------------------- */
+
+
+@media (max-width: 1199px) {
+.uol {
+  font-size: 2.75rem;
+}
+
+.download-text {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 1104px) {
+.uol {
+  font-size: 2.25rem;
+}
+
+.download-text {
+  font-size: 1.5rem;
+}
+
+/* WHEN THE VIEWPORT HITS 999PX DISPLAY THIS CONTENT*/
+
+@media (max-width: 999px) {
+
+  .intro-container {
+    padding: 3% 15%;
+  }
+
+  .phone-image {
+  position: static;
+  padding-bottom: 0;
+  transform: none;
+  margin-left: 0;
+  width: 250px;
+  }
+
+  .title-leftsection {
+  text-align: center;
+  margin: 0;
+  padding-top: 15%;
+  }
+
+  .uol {
+    font-size: 3rem;
+  }
+
+  .download-text {
+    font-size: 1.75rem;
+    margin: 0 auto;
+  }
+
+  .title-rightsection {
+  padding-top: 2.5%;
+  padding-bottom: 10%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .backg-img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+
+.container-motive {
+  display: none;
+}
+
+.title-rightsection {
+  display: block;
+}
+
+  #title {
+  padding: 15% 5%;
+  }
+
+  /* LANDING */
+  .intro-container {
+    padding: 3% 10%;
+    text-align: left;
+  }
+
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+
+  .title-leftsection {
+    display: none;
+    text-align: center;
+    padding: 25% 0 5%;
+  }
+
+  .title-leftsection2 {
+  display: block;
+  padding-top: 10%;
+  }
+
+  .title-rightsection {
+    padding: 0;
+  }
+
+  .uol {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+
+  .download-text {
+    display: none;
+    font-size: 1.75rem;
+    padding-bottom: 10%;
+  }
+
+  .phone-image {
+    width: 250px;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 3%;
+  }
+
+  /* Testimonials */
+
+#testimonials {
+  padding: 25% 0;
+}
+
+.testimonials-text {
+font-size: 1.75rem;
+color: white;
+}
+
+.testimonials-image {
+width: 50%;
+}
+
+.name {
+float: right;
+width: 100%;
+color: white;
+font-size: 1.25rem;
+}
+
+.carousel-control {
+  top: -50px;
+}
+
+#cta {
+  padding: 15% 5%;
+}
+.cta-heading {
+    font-size: 1.75rem;
+    margin-bottom: 5%;
+}
+
+}
+
+
+@media (max-width: 400px) {
+
+#title {
+  padding: 10%;
+}
+
+.title-leftsection2 {
+  padding: 2%;
+}
+
+.phone-image {
+  margin-top: 2.5%;
+  width: 170px;
+}
+
+.download-text {
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.btn {
+  font-size: 1rem;
+}
